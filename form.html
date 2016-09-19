@@ -27,33 +27,33 @@
     <h2 class="page-content__title">Оставьте свой отзыв</h2>
     <p class="page-content__paragraph">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
     <form class="recall-form" action="" method="post">
-      <section class="recall-form__id">
-        <h2 class="recall-form__title">Представтесь, пожалуйста:</h2>
+      <fieldset class="recall-form__id">
+        <legend class="recall-form__title" align="center">Представтесь, пожалуйста:</legend>
         <label for="name">Имя:</label>
         <input type="text" id="name" name="name" placeholder="Петр">
         <label for="surname">Фамилия:</label>
         <input type="text" id="surname" name="surname" placeholder="Иванов">
         <label for="middlename">Отчество:</label>
         <input type="text" id="middlename" name="middlename" placeholder="Александрович">
-      </section>
-      <section class="recall-form__contacts">
-        <h2 class="recall-form__title">Контактная информация:</h2>
+      </fieldset>
+      <fieldset class="recall-form__contacts">
+        <legend class="recall-form__title" align="center">Контактная информация:</legend>
         <label for="name">Контактный телефон:</label>
         <input type="tel" id="tel" name="tel" placeholder="Введите телефон">
         <label for="name">Электронная почта:</label>
         <input type="email" id="email" name="email" placeholder="Введите e-mail">
-      </section>
-      <section class="recall-form__interview">
-        <h2 class="recall-form__title">Ваше общее впечатление:</h2>
+      </fieldset>
+      <fieldset class="recall-form__interview">
+        <legend class="recall-form__title" align="center">Ваше общее впечатление:</legend>
         <input type="radio" id="positive-interview-item" name="interview" value="positive" checked>
         <label for="positive-interview-item">Скорее положительное</label>
         <input type="radio" id="negative-interview-item" name="interview" value="negative">
         <label for="negative-interview-item">Скорее отрицательное</label>
         <input type="radio" id="unknown-interview-item" name="interview" value="unknown">
         <label for="unknown-interview-item">Затрудняюсь ответить</label>
-      </section>
-      <section class="recall-form__visited">
-        <h2 class="recall-form__title">Посещенные достопримечательности:</h2>
+      </fieldset>
+      <fieldset class="recall-form__visited">
+        <legend class="recall-form__title" align="center">Посещенные достопримечательности:</legend>
         <input type="checkbox" id="visited-item-1" name="devils-bridge" checked>
         <label for="visited-item-1">Мост Дьявола</label>
         <input type="checkbox" id="visited-item-2" name="slide-park" checked>
@@ -62,7 +62,7 @@
         <label for="visited-item-3">Гора-Колокол</label>
         <input type="checkbox" id="visited-item-4" name="red-rocks" checked>
         <label for="visited-item-4">Красные скалы</label>
-      </section>
+      </fieldset>
       <section class="recall-form__message">
         <h2 class="recall-form__title">Опишите свои эмоции:</h2>
         <textarea id="message" name="message" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
