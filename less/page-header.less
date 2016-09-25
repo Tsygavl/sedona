@@ -1,0 +1,85 @@
+
+.page-header {
+  max-width: @page-max-width;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.page-header__logo {
+  position: relative;
+  height: 389px;
+
+  &--tiny {
+    height: 156px;
+  }
+}
+
+.page-header__bg-image {
+
+  .img-center(768px, 389px);
+
+  background-color: #81b3d2;
+
+  z-index: 0;
+}
+
+.page-header__logo-image {
+  width: 102px;
+  height: 83px;
+
+  .img-x-center(102px);
+
+  top: -56px;
+
+  z-index: 200;
+}
+
+.page-header__logo-text {
+  width: 460px;
+  height: 80px;
+
+  .img-x-center(460px);
+
+  top: 30px;
+
+  transform: scale(0.5);
+
+  z-index: 200;
+
+  &--hide {
+    display: none;
+  }
+}
+
+.page-header__title-image {
+  width: 320px;
+  height: 220px;
+
+  .img-x-center(320px);
+
+  top: 85px;
+
+  z-index: 1;
+
+  &--hide {
+    display: none;
+  }
+}
+
+.page-header__logo::after {
+  content: '';
+
+  width: 320px;
+  height: 26px;
+
+  .img-x-center(320px);
+
+  bottom: 0px;
+
+  background-image: url('../img/bg-intro-triangle-mobile.svg');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  z-index: 2;
+}
+

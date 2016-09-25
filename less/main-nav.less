@@ -1,0 +1,116 @@
+
+.main-nav {
+  position: relative;
+
+  font-size: 18px;
+  line-height: 40px;
+  font-family: "PTSans", "Arial", sans-serif;
+  font-weight: bold;
+
+  z-index: 100;
+}
+
+.main-nav__btn-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 53px;
+  height: 46px;
+  padding: 0px;
+  margin: 5px;
+
+  font-size: 0px;
+
+  background-color: #81b3d2;
+  cursor: pointer;
+  border: none;
+}
+
+.main-nav__btn-close::before {
+    content: "";
+
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 53px;
+    height: 46px;
+
+    cursor: pointer;
+
+    background-image: url('../img/icon-cross.svg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.main-nav__item {
+
+}
+
+.main-nav__item:first-child a {
+  box-shadow: inset 0px -1px 0px #678fa8;
+}
+
+.main-nav__item:last-child a {
+  box-shadow: inset 0px 1px 0px #9ac2db;
+}
+
+.main-nav__list a {
+  display: block;
+  padding: 8px 20px;
+
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  color: #ffffff;
+  background-color: #81b3d2;
+  box-shadow: inset 0px -1px 0px #678fa8,
+    inset 0px 1px 0px #9ac2db;
+}
+
+.main-nav__control {
+  position: relative;
+
+  .clearfix();
+
+  background-color: #ffffff;
+}
+
+
+.main-nav__btn-toggle {
+  position: relative;
+
+  float: right;
+  width: 53px;
+  height: 46px;
+  padding: 0px;
+  margin: 5px;
+
+  font-size: 0px;
+
+  background-color: #ffffff;
+  cursor: pointer;
+  border: none;
+}
+
+.main-nav__btn-toggle::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+
+  width: 53px;
+  height: 46px;
+
+  background-image: url('../img/icon-menu.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}

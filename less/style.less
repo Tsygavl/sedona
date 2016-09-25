@@ -1,0 +1,49 @@
+
+@font-face {
+  font-family: "PTSans";
+  src: local("PTSans Regular"), local("PTSans-Regular"),
+    url("../fonts/ptsans.woff") format("woff"),
+    url("../fonts/ptsans.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PTSans";
+  src: local("PTSans Bold"), local("PTSans-Bold"),
+    url("../fonts/ptsansbold.woff") format("woff"),
+    url("../fonts/ptsansbold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  font-size: 14px;
+  line-height: 26px;
+  font-family: "PTSans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: #000000;
+  background-color: #f2f2f2;
+}
+
+@page-max-width: 1200px;
+
+@import "mixins";
+
+@import "btn";
+@import "page-header";
+@import "main-nav";
+@import "page-content";
+@import "page-intro";
+@import "advantages";
+@import "hotel-search-dialog";
+@import "location";
+@import "page-footer";
+@import "social-links";
+
+@import "recall-form";
+@import "photo-list";
