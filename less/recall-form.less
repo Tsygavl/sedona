@@ -30,6 +30,11 @@
   font-weight: bold;
 }
 
+.recall-form input[type="checkbox"],
+.recall-form input[type="radio"] {
+  display: none;
+}
+
 .recall-form__section {
   position: relative;
 
@@ -163,6 +168,50 @@
   text-transform: none;
 
   list-style: none;
+}
+
+.recall-form__visited-item {
+  position: relative;
+  margin-bottom: 24px;
+  height: 56px;
+  line-height: 56px;
+}
+.recall-form__checkbox-control {
+  cursor: pointer;
+}
+
+.recall-form__checkbox-icon {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+  width: 56px;
+  height: 56px;
+
+  border-radius: 5px;
+  background-color: #f2f2f2;
+}
+
+.recall-form input[type="checkbox"]:checked + .recall-form__checkbox-icon::before {
+  content: "";
+  
+  position: absolute;
+  
+  top: 50%;
+  left: 50%;
+  
+  width: 23px;
+  height: 16px;
+
+  margin-left: -11px;
+  margin-top: -8px;
+  
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+}
+
+.recall-form__checkbox-label {
+  margin-left: 70px;
 }
 
 .recall-form__message-input {
