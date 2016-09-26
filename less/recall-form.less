@@ -1,5 +1,6 @@
 
 .recall-form {
+  padding-bottom: 35px;
 
   background-color: #ffffff;
 
@@ -32,6 +33,21 @@
   background-color: #f2f2f2;
 }
 
+.recall-form input[type="text"]:hover,
+.recall-form input[type="tel"]:hover,
+.recall-form input[type="email"]:hover {
+  background-color: #e5e5e5;
+}
+
+.recall-form input[type="text"]:focus,
+.recall-form input[type="tel"]:focus,
+.recall-form input[type="email"]:focus {
+
+  background-color: #ffffff;
+  box-shadow: inset 0 0 0 4px #e5e5e5;
+}
+
+
 .recall-form input[type="checkbox"],
 .recall-form input[type="radio"] {
   display: none;
@@ -51,7 +67,7 @@
 
 .recall-form__title {
   position: absolute;
-  
+
   left: 0;
   right: 0;
 
@@ -65,10 +81,13 @@
   font-weight: bold;
 
   text-align: center;
-  transform: translateY(20px);
+  transform: translateY(18px);
 }
 
 .recall-form__invalid-message {
+  display: inline-block;
+
+  margin-top: 5px;
   margin-left: 20px;
 
   color: #ff5c5c;
@@ -77,14 +96,14 @@
 }
 
 /**
-  * Секция персональных данных
-  *
+  * ===========================================================
+  * ===========================================================
   */
 
 .recall-form__id {
 
   margin: 0px;
-  margin-top: 60px;
+  margin-top: 70px;
   padding: 0px;
 
   list-style: none;
@@ -92,7 +111,7 @@
 
 .recall-form__id-item {
   display: flex;
-  
+
   margin: 0px;
   margin-bottom: 20px;
   margin-left: 20px;
@@ -106,13 +125,13 @@
 }
 
 /**
-  * Секция Контактные данные
-  *
+  * ===========================================================
+  * ===========================================================
   */
 
 .recall-form__contacts {
   margin: 0px;
-  margin-top: 60px;
+  margin-top: 65px;
   padding: 0px;
 
   list-style: none;
@@ -121,27 +140,70 @@
 .recall-form__contacts-item {
   margin: 20px;
   margin-top: 0px;
+  margin-bottom: 20px;
 
   text-align: left;
+}
+
+.recall-form__contacts-item input[type="tel"],
+.recall-form__contacts-item input[type="email"] {
+  padding-right: 78px;
 }
 
 .recall-form__contacts-label {
   display: block;
 
   margin-left: 20px;
-  margin-bottom: 15px;
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
 
+.recall-form__contacts-input {
+  position: relative;
+}
+
+.recall-form__input-btn {
+  position: absolute;
+
+  top: 0;
+  right: 0;
+
+  width: 58px;
+  height: 58px;
+
+  font-size: 0px;
+
+  background-color: #e6e6e6;
+  border: none;
+  box-shadow: none;
+
+  cursor: pointer;
+
+  &--phone {
+    background-image: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+  &--mail {
+    background-image: url("../img/icon-mail.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+}
+
+
 /**
-  * Секция "Ваше общее впечатление"
-  *
+  * ===========================================================
+  * ===========================================================
   */
 
 .recall-form__interview {
   margin: 0px;
   padding: 0px;
 
-  margin-top: 70px;
+  margin-top: 65px;
+  margin-bottom: 25px;
 
   width: 100%;
 
@@ -157,10 +219,10 @@
 
 .recall-form__interview-item {
   position: relative;
- 
+
   margin-left: 20px;
   margin-right: 20px;
-  margin-bottom: 24px;
+  margin-bottom: 15px;
 
   height: 56px;
 
@@ -187,7 +249,7 @@
 .recall-form input[type="radio"]:checked +
 .recall-form__radio-icon::before {
   content: "";
-  
+
   position: absolute;
 
   top: 50%;
@@ -234,12 +296,12 @@
 }
 
 .recall-form__radio-label {
-  margin-left: 70px;
+  margin-left: 80px;
 }
 
 /**
-  * Секция "Посещенные достопримечательности"
-  *
+  * ===========================================================
+  * ===========================================================
   */
 
 .recall-form__visited {
@@ -292,7 +354,7 @@
 .recall-form input[type="checkbox"]:checked +
 .recall-form__checkbox-icon::before {
   content: "";
-  
+
   position: absolute;
 
   top: 50%;
@@ -321,7 +383,7 @@
 .recall-form input[type="checkbox"]:disabled +
 .recall-form__checkbox-icon::before {
   content: "";
-  
+
   position: absolute;
 
   top: 50%;
@@ -339,23 +401,23 @@
 }
 
 .recall-form__checkbox-label {
-  margin-left: 70px;
+  margin-left: 80px;
 }
 
 /**
-  * Секция "Опишите свои эмоции"
-  *
+  * ===========================================================
+  * ===========================================================
   */
-  
+
 .recall-form__message-wrap {
   padding: 0px;
-  
-  margin: 70px 20px;
+
+  margin: 55px 20px;
   margin-bottom: 50px;
 }
 
 .recall-form__message-input {
-  box-sizing: border-box; 
+  box-sizing: border-box;
   padding: 20px;
   margin: 0px;
 
@@ -374,3 +436,7 @@
   resize: none;
 }
 
+.recall-form__btn {
+  padding-left: 45px;
+  padding-right: 45px;
+}

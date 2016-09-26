@@ -39,15 +39,15 @@
         <ul class="recall-form__id">
           <li class="recall-form__id-item">
             <label class="recall-form__id-label" for="name">Имя:</label>
-            <input class="recall-form__id-input" type="text" name="name" placeholder="Пётр">
+            <input type="text" name="name" placeholder="Пётр">
           </li>
           <li class="recall-form__id-item">
             <label class="recall-form__id-label" for="surname">Фамилия:</label>
-            <input class="recall-form__id-input" type="text" id="surname" name="surname" placeholder="Иванов">
+            <input type="text" name="surname" placeholder="Иванов">
           </li>
           <li class="recall-form__id-item">
             <label class="recall-form__id-label" for="middlename">Отчество:</label>
-            <input class="recall-form__id-input" type="text" id="middlename" name="middlename" placeholder="Александрович">
+            <input type="text" name="middlename" placeholder="Александрович">
           </li>
         </ul>
       </fieldset>
@@ -56,12 +56,18 @@
         <ul class="recall-form__contacts">
           <li class="recall-form__contacts-item">
             <label class="recall-form__contacts-label" for="tel">Контактный телефон:</label>
-            <input class="recall-form__contacts-input" type="tel" id="tel" name="tel" placeholder="Введите телефон">
+            <div class="recall-form__contacts-input">
+              <input type="tel" id="tel" name="tel" placeholder="Введите телефон">
+              <button class="recall-form__input-btn  recall-form__input-btn--phone" type="button">Набрать номер</button>
+            </div>
             <span class="recall-form__invalid-message">Ошибка, перепроверьте номер</span>
           </li>
           <li class="recall-form__contacts-item">
             <label class="recall-form__contacts-label" for="email">Электронная почта:</label>
-            <input class="recall-form__contacts-input" type="email" id="email" name="email" placeholder="Введите e-mail">
+            <div class="recall-form__contacts-input">
+              <input type="email" id="email" name="email" placeholder="Введите e-mail">
+              <button class="recall-form__input-btn  recall-form__input-btn--mail" type="button">Отправить письмо</button>
+            </div>
           </li>
         </ul>
       </fieldset>
@@ -130,7 +136,7 @@
           <textarea class="recall-form__message-input" id="message" name="message" placeholder="Опишите подробно все свои восторги"></textarea>
         </div>
       </fieldset>
-      <input class="btn recall-form__btn" type="submit" value="Отправить отзыв">
+      <input class="btn  recall-form__btn" type="submit" value="Отправить отзыв">
     </form>
   </main>
   <footer class="page-footer">
