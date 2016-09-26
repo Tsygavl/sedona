@@ -192,7 +192,8 @@
   background-color: #f2f2f2;
 }
 
-.recall-form input[type="checkbox"]:checked + .recall-form__checkbox-icon::before {
+.recall-form input[type="checkbox"]:checked +
+.recall-form__checkbox-icon::before {
   content: "";
   
   position: absolute;
@@ -208,6 +209,21 @@
   
   background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
+}
+
+.recall-form__checkbox-control:hover
+.recall-form__checkbox-icon {
+  background-color: #e5e5e5;
+}
+
+.recall-form input[type="checkbox"]:disabled +
+.recall-form__checkbox-icon {
+  background-color: #d5d5d5;
+}
+
+.recall-form input[type="checkbox"]:disabled +
+.recall-form__checkbox-icon::before {
+  opacity: 0.3;
 }
 
 .recall-form__checkbox-label {
