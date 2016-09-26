@@ -21,6 +21,7 @@
   padding: 16px 20px;
 
   width: 100%;
+  min-width: 180px;
 
   font-size: 18px;
   line-height: 26px;
@@ -37,32 +38,42 @@
 }
 
 .recall-form__section {
-  box-sizing: border-box;
   position: relative;
 
   margin: 0px auto;
-  padding: 20px;
-
-  width: 100%;
+  padding: 0px;
 
   border: none;
   border-top: 1px solid #e5e5e5;
+
+  text-align: center;
 }
 
 .recall-form__title {
   position: absolute;
-
-  left: 50%;
-
-  margin-left: -140px;
   
-  width: 280px;
+  left: 0;
+  right: 0;
+
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+
 
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
 
   text-align: center;
+  transform: translateY(20px);
+}
+
+.recall-form__invalid-message {
+  margin-left: 20px;
+
+  color: #ff5c5c;
+
+  text-transform: none;
 }
 
 /**
@@ -73,72 +84,52 @@
 .recall-form__id {
 
   margin: 0px;
-  margin-top: 50px;
+  margin-top: 60px;
   padding: 0px;
-
-  width: 100%;
 
   list-style: none;
 }
 
-.recall-form__name-row {
-  position: relative;
-
-  margin-left: 50px;
-  margin-top: 20px;
+.recall-form__id-item {
+  display: flex;
+  
+  margin: 0px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
-.recall-form__name-label {
-  position: absolute;
+.recall-form__id-label {
+  margin-right: 20px;
 
-  top: 50%;
-  left: -50px;
-
-  margin-top: -13px;
+  line-height: 58px;
 }
 
-.recall-form__surname-row {
-  position: relative;
-
-  margin-left: 87px;
-  margin-top: 20px;
-}
-
-.recall-form__surname-label {
-  position: absolute;
-
-  top: 50%;
-  left: -87px;
-
-  margin-top: -13px;
-}
-
-.recall-form__middlename-row {
-  position: relative;
-
-  margin-left: 85px;
-  margin-top: 20px;
-}
-
-.recall-form__middlename-label {
-  position: absolute;
-
-  top: 50%;
-  left: -85px;
-
-  margin-top: -13px;
-}
+/**
+  * Секция Контактные данные
+  *
+  */
 
 .recall-form__contacts {
   margin: 0px;
+  margin-top: 60px;
   padding: 0px;
 
-  margin-top: 50px;
+  list-style: none;
+}
 
-  width: 100%;
+.recall-form__contacts-item {
+  margin: 20px;
+  margin-top: 0px;
 
   text-align: left;
-  list-style: none;
+}
+
+.recall-form__contacts-label {
+  display: block;
+
+  margin-left: 20px;
+  margin-bottom: 15px;
 }
 
 /**
@@ -150,7 +141,7 @@
   margin: 0px;
   padding: 0px;
 
-  margin-top: 50px;
+  margin-top: 70px;
 
   width: 100%;
 
@@ -166,7 +157,9 @@
 
 .recall-form__interview-item {
   position: relative;
-
+ 
+  margin-left: 20px;
+  margin-right: 20px;
   margin-bottom: 24px;
 
   height: 56px;
@@ -253,7 +246,7 @@
   margin: 0px;
   padding: 0px;
 
-  margin-top: 50px;
+  margin-top: 90px;
 
   width: 100%;
 
@@ -270,6 +263,8 @@
 .recall-form__visited-item {
   position: relative;
 
+  margin-left: 20px;
+  margin-right: 20px;
   margin-bottom: 24px;
 
   height: 56px;
@@ -351,15 +346,22 @@
   * Секция "Опишите свои эмоции"
   *
   */
+  
+.recall-form__message-wrap {
+  padding: 0px;
+  
+  margin: 70px 20px;
+  margin-bottom: 50px;
+}
 
 .recall-form__message-input {
-  box-sizing: border-box;
-
-  margin-top: 50px;
+  box-sizing: border-box; 
   padding: 20px;
+  margin: 0px;
 
   width: 100%;
   height: 160px;
+  min-width: 150px;
 
   font-size: 18px;
   line-height: 26px;

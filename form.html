@@ -37,30 +37,31 @@
       <fieldset class="recall-form__section">
         <legend class="recall-form__title" align="center">Представтесь, пожалуйста:</legend>
         <ul class="recall-form__id">
-          <li class="recall-form__name-row">
-            <label class="recall-form__name-label" for="name">Имя:</label>
-            <input type="text" id="name" name="name" placeholder="Петр">
+          <li class="recall-form__id-item">
+            <label class="recall-form__id-label" for="name">Имя:</label>
+            <input class="recall-form__id-input" type="text" name="name" placeholder="Пётр">
           </li>
-          <li class="recall-form__surname-row">
-            <label class="recall-form__surname-label" for="surname">Фамилия:</label>
-            <input type="text" id="surname" name="surname" placeholder="Иванов">
+          <li class="recall-form__id-item">
+            <label class="recall-form__id-label" for="surname">Фамилия:</label>
+            <input class="recall-form__id-input" type="text" id="surname" name="surname" placeholder="Иванов">
           </li>
-          <li class="recall-form__middlename-row">
-            <label class="recall-form__middlename-label" for="middlename">Отчество:</label>
-            <input type="text" id="middlename" name="middlename" placeholder="Александрович">
+          <li class="recall-form__id-item">
+            <label class="recall-form__id-label" for="middlename">Отчество:</label>
+            <input class="recall-form__id-input" type="text" id="middlename" name="middlename" placeholder="Александрович">
           </li>
         </ul>
       </fieldset>
       <fieldset class="recall-form__section">
         <legend class="recall-form__title" align="center">Контактная информация:</legend>
         <ul class="recall-form__contacts">
-          <li>
-            <label for="tel">Контактный телефон:</label>
-            <input type="tel" id="tel" name="tel" placeholder="Введите телефон">
+          <li class="recall-form__contacts-item">
+            <label class="recall-form__contacts-label" for="tel">Контактный телефон:</label>
+            <input class="recall-form__contacts-input" type="tel" id="tel" name="tel" placeholder="Введите телефон">
+            <span class="recall-form__invalid-message">Ошибка, перепроверьте номер</span>
           </li>
-          <li>
-            <label for="email">Электронная почта:</label>
-            <input type="email" id="email" name="email" placeholder="Введите e-mail">
+          <li class="recall-form__contacts-item">
+            <label class="recall-form__contacts-label" for="email">Электронная почта:</label>
+            <input class="recall-form__contacts-input" type="email" id="email" name="email" placeholder="Введите e-mail">
           </li>
         </ul>
       </fieldset>
@@ -125,7 +126,9 @@
       </fieldset>
       <fieldset class="recall-form__section">
         <legend class="recall-form__title" align="center">Опишите свои эмоции:</legend>
-        <textarea class="recall-form__message-input" id="message" name="message" placeholder="Опишите подробно все свои восторги"></textarea>
+        <div class="recall-form__message-wrap">
+          <textarea class="recall-form__message-input" id="message" name="message" placeholder="Опишите подробно все свои восторги"></textarea>
+        </div>
       </fieldset>
       <input class="btn recall-form__btn" type="submit" value="Отправить отзыв">
     </form>
