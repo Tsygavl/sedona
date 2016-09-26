@@ -12,17 +12,19 @@
 
 .main-nav__btn-close {
   position: absolute;
+
   top: 0;
   right: 0;
 
+  margin: 5px;
+  padding: 0px;
+
   width: 53px;
   height: 46px;
-  padding: 0px;
-  margin: 5px;
 
   font-size: 0px;
 
-  background-color: #81b3d2;
+  background-color: transparent;
   cursor: pointer;
   border: none;
 }
@@ -31,8 +33,10 @@
     content: "";
 
     position: absolute;
+
     top: 0px;
     right: 0px;
+
     width: 53px;
     height: 46px;
 
@@ -50,15 +54,11 @@
   list-style-type: none;
 }
 
-.main-nav__item {
-
-}
-
-.main-nav__item:first-child a {
+.main-nav__list .main-nav__item:first-child a {
   box-shadow: inset 0px -1px 0px #678fa8;
 }
 
-.main-nav__item:last-child a {
+.main-nav__list .main-nav__item:last-child a {
   box-shadow: inset 0px 1px 0px #9ac2db;
 }
 
@@ -76,6 +76,15 @@
     inset 0px 1px 0px #9ac2db;
 }
 
+.main-nav__list a:hover {
+  background-color: #669ec0;
+}
+
+.main-nav__list a:active {
+  background-color: #5496bd;
+  color: #88b6d1;
+}
+
 .main-nav__control {
   position: relative;
 
@@ -89,10 +98,12 @@
   position: relative;
 
   float: right;
+
+  margin: 5px;
+  padding: 0px;
+
   width: 53px;
   height: 46px;
-  padding: 0px;
-  margin: 5px;
 
   font-size: 0px;
 
@@ -104,6 +115,7 @@
 .main-nav__btn-toggle::before {
   content: "";
   position: absolute;
+
   top: 0px;
   right: 0px;
 
