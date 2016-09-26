@@ -67,17 +67,26 @@
       <fieldset class="recall-form__section">
         <legend class="recall-form__title" align="center">Ваше общее впечатление:</legend>
         <ul class="recall-form__interview">
-          <li>
-            <input type="radio" id="positive-interview-item" name="interview" value="positive" checked>
-            <label for="positive-interview-item">Скорее положительное</label>
+          <li class="recall-form__interview-item">
+            <label class="recall-form__radio-control">
+              <input type="radio" name="interview" value="positive" checked>
+              <span class="recall-form__radio-icon"></span>
+              <span class="recall-form__radio-label">Скорее положительное</span>
+            </label>
           </li>
-          <li>
-            <input type="radio" id="negative-interview-item" name="interview" value="negative">
-            <label for="negative-interview-item">Скорее отрицательное</label>
+          <li class="recall-form__interview-item">
+            <label class="recall-form__radio-control">
+              <input type="radio" name="interview" value="negative">
+              <span class="recall-form__radio-icon"></span>
+              <span class="recall-form__radio-label">Скорее отрицательное</span>
+            </label>
           </li>
-          <li>
-            <input type="radio" id="unknown-interview-item" name="interview" value="unknown">
-            <label for="unknown-interview-item">Затрудняюсь ответить</label>
+          <li class="recall-form__interview-item">
+            <label class="recall-form__radio-control">
+              <input type="radio" name="interview" value="negative">
+              <span class="recall-form__radio-icon"></span>
+              <span class="recall-form__radio-label">Затрудняюсь ответить</span>
+            </label>
           </li>
         </ul>
       </fieldset>
@@ -107,7 +116,7 @@
           </li>
           <li class="recall-form__visited-item">
             <label class="recall-form__checkbox-control">
-              <input type="checkbox" name="red-rocks" checked disabled>
+              <input type="checkbox" name="red-rocks">
               <span class="recall-form__checkbox-icon"></span>
               <span class="recall-form__checkbox-label">Красные скалы</span>
             </label>

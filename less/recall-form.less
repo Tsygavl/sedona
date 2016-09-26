@@ -134,6 +134,11 @@
   list-style: none;
 }
 
+/**
+  * Секция "Ваше общее впечатление"
+  *
+  */
+
 .recall-form__interview {
   margin: 0px;
   padding: 0px;
@@ -151,6 +156,91 @@
 
   list-style: none;
 }
+
+.recall-form__interview-item {
+  position: relative;
+
+  margin-bottom: 24px;
+
+  height: 56px;
+
+  line-height: 56px;
+}
+
+.recall-form__radio-control {
+  cursor: pointer;
+}
+
+.recall-form__radio-icon {
+  position: absolute;
+
+  top: 0px;
+  left: 0px;
+
+  width: 56px;
+  height: 56px;
+
+  background-color: #f2f2f2;
+  border-radius: 50%;
+}
+
+.recall-form input[type="radio"]:checked +
+.recall-form__radio-icon::before {
+  content: "";
+  
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  margin-left: -11px;
+  margin-top: -11px;
+
+  width: 22px;
+  height: 22px;
+
+  background-color: #333333;
+  border-radius: 50%;
+}
+
+.recall-form__radio-control:hover
+.recall-form__radio-icon {
+  background-color: #e5e5e5;
+}
+
+.recall-form input[type="radio"]:disabled +
+.recall-form__radio-icon {
+  background-color: #d5d5d5;
+}
+
+.recall-form input[type="radio"]:disabled +
+.recall-form__radio-icon::before {
+  content: "";
+
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  margin-left: -11px;
+  margin-top: -11px;
+
+  width: 22px;
+  height: 22px;
+
+  background-color: #333333;
+  border-radius: 50%;
+  opacity: 0.3;
+}
+
+.recall-form__radio-label {
+  margin-left: 70px;
+}
+
+/**
+  * Секция "Посещенные достопримечательности"
+  *
+  */
 
 .recall-form__visited {
   margin: 0px;
@@ -172,16 +262,21 @@
 
 .recall-form__visited-item {
   position: relative;
+
   margin-bottom: 24px;
+
   height: 56px;
+
   line-height: 56px;
 }
+
 .recall-form__checkbox-control {
   cursor: pointer;
 }
 
 .recall-form__checkbox-icon {
   position: absolute;
+
   top: 0px;
   left: 0px;
 
@@ -197,16 +292,16 @@
   content: "";
   
   position: absolute;
-  
+
   top: 50%;
   left: 50%;
-  
-  width: 23px;
-  height: 16px;
 
   margin-left: -11px;
   margin-top: -8px;
-  
+
+  width: 23px;
+  height: 16px;
+
   background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
 }
@@ -223,12 +318,32 @@
 
 .recall-form input[type="checkbox"]:disabled +
 .recall-form__checkbox-icon::before {
+  content: "";
+  
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  margin-left: -11px;
+  margin-top: -8px;
+
+  width: 23px;
+  height: 16px;
+
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
   opacity: 0.3;
 }
 
 .recall-form__checkbox-label {
   margin-left: 70px;
 }
+
+/**
+  * Секция "Опишите свои эмоции"
+  *
+  */
 
 .recall-form__message-input {
   margin-top: 50px;
