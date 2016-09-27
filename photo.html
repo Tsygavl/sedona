@@ -67,16 +67,21 @@
         </figcaption>
       </figure>
     </section>
-    <div class="page-content__wrap">
-      <h2 class="page-content__title">Все еще сомневаетесь?</h2>
-      <p class="page-content__paragraph">Смотрите видеопрентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-    </div>
-    <section class="video-list">
-      <video class="video-list__item" controls preload="metadata" width="280" height="201">
-        <source src="/" type="video/mp4">
-        <source src="/" type="video/ogg">
-        <source src="/" type="video/webm">
-      </video>
+    <section class="video">
+      <h2 class="video__header">Все еще сомневаетесь?</h2>
+      <p class="video__content">Смотрите видеопрентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+      <section class="video__item">
+        <video class="video__screen" controls preload="metadata" width="320" height="200">
+          <source src="/" type="video/mp4">
+          <source src="/" type="video/ogg">
+          <source src="/" type="video/webm">
+        </video>
+        <div class="video__controls">
+          <button class="video__control-btn  video__control-btn--repaly">Повтор</button>
+          <button class="video__control-btn  video__control-btn--subtitles">Субтитры</button>
+          <button class="video__control-btn  video__control-btn--fullscreen">Полный экран</button>
+        </div>
+      </section>
     </section>
   </main>
   <footer class="page-footer">
