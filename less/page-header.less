@@ -1,3 +1,8 @@
+/**
+  * ===========================================================
+  * PAGE HEADER
+  * ===========================================================
+  */
 
 .page-header {
   max-width: @page-max-width;
@@ -13,6 +18,23 @@
 
   &--tiny {
     height: 156px;
+  }
+
+  &::after {
+    content: '';
+
+    .img-x-center(320px);
+
+    bottom: 0px;
+
+    width: 320px;
+    height: 26px;
+
+    background-image: url('../img/bg-intro-triangle-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    z-index: 2;
   }
 }
 
@@ -55,12 +77,13 @@
 }
 
 .page-header__title-image {
-  width: 320px;
-  height: 220px;
 
   .img-x-center(320px);
 
   top: 85px;
+
+  width: 320px;
+  height: 220px;
 
   z-index: 1;
 
@@ -69,20 +92,4 @@
   }
 }
 
-.page-header__logo::after {
-  content: '';
-
-  width: 320px;
-  height: 26px;
-
-  .img-x-center(320px);
-
-  bottom: 0px;
-
-  background-image: url('../img/bg-intro-triangle-mobile.svg');
-  background-repeat: no-repeat;
-  background-position: 0 0;
-
-  z-index: 2;
-}
 

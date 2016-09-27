@@ -1,3 +1,8 @@
+/**
+  * ===========================================================
+  * PHOTOS SECTION
+  * ===========================================================
+  */
 
 .photo-list {
   max-width: @page-max-width;
@@ -53,21 +58,14 @@
   cursor: pointer;
   border: none;
   background: none;
+
+  &::before {
+    content: '';
+
+    .absolute-top-left(5px, 0px, 22px, 20px);
+
+    background-image: url('../img/icon-like.svg');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
 }
-
-.photo-list__like-btn::before {
-  content: '';
-
-  position: absolute;
-
-  top: 5px;
-  left: 0px;
-
-  width: 22px;
-  height: 20px;
-
-  background-image: url('../img/icon-like.svg');
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-

@@ -1,3 +1,8 @@
+/**
+  * ===========================================================
+  * MAIN NAVIGATION
+  * ===========================================================
+  */
 
 .main-nav {
   position: relative;
@@ -11,40 +16,29 @@
 }
 
 .main-nav__btn-close {
-  position: absolute;
 
-  top: 0;
-  right: 0;
+  .absolute-top-right(0px; 0px; 53px; 46px);
 
   margin: 5px;
   padding: 0px;
-
-  width: 53px;
-  height: 46px;
 
   font-size: 0px;
 
   background-color: transparent;
   cursor: pointer;
   border: none;
-}
 
-.main-nav__btn-close::before {
+  &::before {
     content: "";
 
-    position: absolute;
-
-    top: 0px;
-    right: 0px;
-
-    width: 53px;
-    height: 46px;
+    .absolute-top-right(0px; 0px; 53px; 46px);
 
     cursor: pointer;
 
     background-image: url('../img/icon-cross.svg');
     background-repeat: no-repeat;
     background-position: 50% 50%;
+  }
 }
 
 .main-nav__list {
@@ -54,12 +48,15 @@
   list-style-type: none;
 }
 
-.main-nav__list .main-nav__item:first-child a {
-  box-shadow: inset 0px -1px 0px #678fa8;
-}
+.main-nav__list .main-nav__item {
 
-.main-nav__list .main-nav__item:last-child a {
-  box-shadow: inset 0px 1px 0px #9ac2db;
+  &:first-child a {
+    box-shadow: inset 0px -1px 0px #678fa8;
+  }
+
+  &:last-child a {
+    box-shadow: inset 0px 1px 0px #9ac2db;
+  }
 }
 
 .main-nav__list a {
@@ -74,25 +71,24 @@
   background-color: #81b3d2;
   box-shadow: inset 0px -1px 0px #678fa8,
     inset 0px 1px 0px #9ac2db;
-}
 
-.main-nav__list a:hover {
-  background-color: #669ec0;
-}
+  &:hover {
+    background-color: #669ec0;
+  }
 
-.main-nav__list a:active {
-  background-color: #5496bd;
-  color: #88b6d1;
+  &:active {
+    background-color: #5496bd;
+    color: #88b6d1;
+  }
 }
 
 .main-nav__control {
   position: relative;
 
-  .clearfix();
-
   background-color: #ffffff;
-}
 
+  .clearfix();
+}
 
 .main-nav__btn-toggle {
   position: relative;
@@ -107,22 +103,17 @@
 
   font-size: 0px;
 
-  background-color: #ffffff;
+  background-color: transparent;
   cursor: pointer;
   border: none;
-}
+  
+  &::before {
+    content: "";
 
-.main-nav__btn-toggle::before {
-  content: "";
-  position: absolute;
+    .absolute-top-left(0px; 0px; 53px; 46px);
 
-  top: 0px;
-  right: 0px;
-
-  width: 53px;
-  height: 46px;
-
-  background-image: url('../img/icon-menu.svg');
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+    background-image: url('../img/icon-menu.svg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
 }
