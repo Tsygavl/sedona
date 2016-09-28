@@ -1,0 +1,409 @@
+/**
+  * ===========================================================
+  * RECALL FORM
+  * ===========================================================
+  */
+
+.recall-form {
+  padding-bottom: 35px;
+
+  background-color: #ffffff;
+
+  font-size: 14px;
+  line-height: 26px;
+  font-family: "PTSans", "Arial", sans-serif;
+  font-weight: normal;
+
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.recall-form input[type="text"],
+.recall-form input[type="tel"],
+.recall-form input[type="email"] {
+  box-sizing: border-box;
+  position: relative;
+
+  padding: 16px 20px;
+
+  width: 100%;
+  min-width: 180px;
+
+  font-size: 18px;
+  line-height: 26px;
+  font-family: "PTSans", "Arial", sans-serif;
+  font-weight: bold;
+
+  border: none;
+  background-color: #f2f2f2;
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:focus {
+    background-color: #ffffff;
+    box-shadow: inset 0 0 0 4px #e5e5e5;
+  }
+}
+
+.recall-form input[type="checkbox"],
+.recall-form input[type="radio"] {
+  display: none;
+}
+
+.recall-form__section {
+  position: relative;
+
+  margin: 0px auto;
+  padding: 0px;
+
+  border: none;
+  border-top: 1px solid #e5e5e5;
+
+  text-align: center;
+}
+
+.recall-form__title {
+  position: absolute;
+
+  left: 0;
+  right: 0;
+
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+
+
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+
+  text-align: center;
+  transform: translateY(18px);
+}
+
+.recall-form__invalid-message {
+  display: inline-block;
+
+  margin-top: 5px;
+  margin-left: 20px;
+
+  color: #ff5c5c;
+
+  text-transform: none;
+}
+
+/**
+  * ===========================================================
+  * ===========================================================
+  */
+
+.recall-form__id {
+
+  margin: 0px;
+  margin-top: 70px;
+  padding: 0px;
+
+  list-style: none;
+}
+
+.recall-form__id-item {
+  display: flex;
+
+  margin: 0px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.recall-form__id-label {
+  margin-right: 20px;
+
+  line-height: 58px;
+}
+
+/**
+  * ===========================================================
+  * ===========================================================
+  */
+
+.recall-form__contacts {
+  margin: 0px;
+  margin-top: 65px;
+  padding: 0px;
+
+  list-style: none;
+}
+
+.recall-form__contacts-item {
+  margin: 20px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+
+  text-align: left;
+}
+
+.recall-form__contacts-item input[type="tel"],
+.recall-form__contacts-item input[type="email"] {
+  padding-right: 78px;
+}
+
+.recall-form__contacts-label {
+  display: block;
+
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.recall-form__contacts-input {
+  position: relative;
+}
+
+.recall-form__input-btn {
+
+  position: absolute;
+  top: 0px;
+  right: 0px;
+
+  width: 58px;
+  height: 58px;
+
+  font-size: 0px;
+
+  background-color: #e6e6e6;
+  border: none;
+  box-shadow: none;
+
+  cursor: pointer;
+
+  &--phone {
+    background-image: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+  &--mail {
+    background-image: url("../img/icon-mail.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+}
+
+/**
+  * ===========================================================
+  * ===========================================================
+  */
+
+.recall-form__interview {
+  margin: 0px;
+  padding: 0px;
+
+  margin-top: 65px;
+  margin-bottom: 25px;
+
+  width: 100%;
+
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+
+  text-align: left;
+  text-transform: none;
+
+  list-style: none;
+}
+
+.recall-form__interview-item {
+  position: relative;
+
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 15px;
+
+  height: 56px;
+
+  line-height: 56px;
+}
+
+.recall-form__radio-control {
+  cursor: pointer;
+
+  &:hover .recall-form__radio-icon {
+    background-color: #e5e5e5;
+  }
+}
+
+.recall-form__radio-icon {
+
+  .absolute-top-left(0px, 0px, 56px, 56px);
+
+  background-color: #f2f2f2;
+  border-radius: 50%;
+}
+
+.recall-form input[type="radio"] {
+
+  &:checked + .recall-form__radio-icon::before {
+    content: "";
+
+    margin-left: -11px;
+    margin-top: -11px;
+
+    .absolute-top-left(50%, 50%, 22px, 22px);
+
+    background-color: #333333;
+    border-radius: 50%;
+  }
+
+  &:disabled + .recall-form__radio-icon {
+    background-color: #d5d5d5;
+  }
+
+  &:disabled + .recall-form__radio-icon::before {
+    content: "";
+
+    margin-left: -11px;
+    margin-top: -11px;
+
+    .absolute-top-left(50%, 50%, 22px, 22px);
+
+    background-color: #333333;
+    border-radius: 50%;
+    opacity: 0.3;
+  }
+}
+
+.recall-form__radio-label {
+  margin-left: 80px;
+}
+
+/**
+  * ===========================================================
+  * ===========================================================
+  */
+
+.recall-form__visited {
+  margin: 0px;
+  padding: 0px;
+
+  margin-top: 90px;
+
+  width: 100%;
+
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+
+  text-align: left;
+  text-transform: none;
+
+  list-style: none;
+}
+
+.recall-form__visited-item {
+  position: relative;
+
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 24px;
+
+  height: 56px;
+
+  line-height: 56px;
+}
+
+.recall-form__checkbox-control {
+  cursor: pointer;
+
+  &:hover .recall-form__checkbox-icon {
+    background-color: #e5e5e5;
+  }
+}
+
+.recall-form__checkbox-icon {
+  position: absolute;
+
+  top: 0px;
+  left: 0px;
+
+  width: 56px;
+  height: 56px;
+
+  border-radius: 5px;
+  background-color: #f2f2f2;
+}
+
+.recall-form input[type="checkbox"] {
+
+  &:checked + .recall-form__checkbox-icon::before {
+    content: "";
+
+    margin-left: -11px;
+    margin-top: -8px;
+
+    .absolute-top-left(50%, 50%, 23px, 16px);
+
+    background-image: url("../img/icon-tick.svg");
+    background-repeat: no-repeat;
+  }
+
+  &:disabled + .recall-form__checkbox-icon {
+    background-color: #d5d5d5;
+  }
+
+  &:disabled + .recall-form__checkbox-icon::before {
+    content: "";
+
+    margin-left: -11px;
+    margin-top: -8px;
+
+    .absolute-top-left(50%, 50%, 23px, 16px);
+
+    background-image: url("../img/icon-tick.svg");
+    background-repeat: no-repeat;
+    opacity: 0.3;
+  }
+}
+
+.recall-form__checkbox-label {
+  margin-left: 80px;
+}
+
+/**
+  * ===========================================================
+  * ===========================================================
+  */
+
+.recall-form__message-wrap {
+  padding: 0px;
+
+  margin: 55px 20px;
+  margin-bottom: 50px;
+}
+
+.recall-form__message-input {
+  box-sizing: border-box;
+  padding: 20px;
+  margin: 0px;
+
+  width: 100%;
+  height: 160px;
+  min-width: 150px;
+
+  font-size: 18px;
+  line-height: 26px;
+  font-family: "PTSans", "Arial", sans-serif;
+  font-weight: bold;
+
+  color: #000000;
+  border: none;
+  background-color: #f2f2f2;
+  resize: none;
+}
+
+.recall-form__btn {
+  padding-left: 45px;
+  padding-right: 45px;
+}

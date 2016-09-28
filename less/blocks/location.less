@@ -1,0 +1,28 @@
+/**
+  * ===========================================================
+  * MAP SECTION
+  * ===========================================================
+  */
+
+.location {
+  height: 350px;
+}
+
+.location__map-wrap {
+  position: relative;
+  margin: 0 auto;
+
+  width: 320px;
+  height: 350px;
+}
+
+.location__mark:before {
+  content: '';
+
+  .absolute-top-left(160px, 145px, 18px, 18px);
+
+  border: 5px solid #ffffff;
+  border-radius: 50%;
+
+  background-color: #81b4d4;
+}

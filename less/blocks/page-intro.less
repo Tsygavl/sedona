@@ -1,0 +1,59 @@
+/**
+  * ===========================================================
+  * PAGE INTRO
+  * ===========================================================
+  */
+
+.page-intro {
+  position: relative;
+  padding: 20px 21px;
+  padding-bottom: 15px;
+
+  background-color: #ffffff;
+
+  &--decorated::after {
+    content: '';
+
+    .img-x-center(320px);
+
+    bottom: -18px;
+
+    width: 320px;
+    height: 37px;
+
+    background-image: url('../img/bg-triangle.svg');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    z-index: 2;
+  }
+}
+
+.page-intro__header {
+  margin: 20px 0px;
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.page-intro__content {
+  margin: 25px 0px;
+  margin-bottom: 10px;
+
+  font-size: 14px;
+  line-height: 26px;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  &--tiny {
+    margin-bottom: 0px;
+
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
