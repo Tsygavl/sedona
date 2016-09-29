@@ -48,18 +48,18 @@
   list-style-type: none;
 }
 
-.main-nav__list .main-nav__item {
+.main-nav__item {
 
-  &:first-child a {
+  &:first-child .main-nav__link {
     box-shadow: inset 0px -1px 0px #678fa8;
   }
 
-  &:last-child a {
+  &:last-child .main-nav__link {
     box-shadow: inset 0px 1px 0px #9ac2db;
   }
 }
 
-.main-nav__list a {
+.main-nav__link {
   display: block;
   padding: 8px 20px;
 
@@ -71,6 +71,7 @@
   background-color: #81b3d2;
   box-shadow: inset 0px -1px 0px #678fa8,
     inset 0px 1px 0px #9ac2db;
+  cursor: pointer;
 
   &:hover {
     background-color: #669ec0;
@@ -123,3 +124,88 @@
   * MAIN NAVIGATION tablet
   * ===========================================================
   */
+
+@media @tablet-widths {
+
+  .main-nav__list {
+
+    background-color: #ffffff;
+
+    .clearfix();
+  }
+
+  .main-nav__btn-close {
+    display: none;
+  }
+
+  .main-nav__item {
+    display: inline-block;
+
+    float: left;
+    width: 20%;
+
+    &:nth-child(n + 3) {
+      float: right;
+    }
+    
+    &:first-child .main-nav__link {
+      box-shadow: none;
+    }
+
+    &:last-child .main-nav__link {
+      box-shadow: none;
+    }
+  }
+  
+  .main-nav__link {
+    padding: 15px 20px;
+
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 26px;
+    
+    color: #000000;
+    background-color: #ffffff;
+    box-shadow: none;
+
+    &:hover {
+      background-color: #ffffff;
+      color: #81b3d2;
+    }
+
+    &:active {
+      background-color: #ffffff;
+      color: #b2b2b2;
+    }
+
+    &--active {
+      color: #766357;
+
+      &:hover {
+        background-color: #ffffff;
+        color: #604e43;
+      }
+
+      &:active {
+        background-color: #ffffff;
+        color: #d6d0cc;
+      }
+    }
+  }
+  
+  .main-nav__control {
+    display: none;
+  }
+}
+
+/**
+  * ===========================================================
+  * MAIN NAVIGATION desktop
+  * ===========================================================
+  */
+
+@media @desktop-widths {
+  
+}
+
+
