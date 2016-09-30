@@ -16,7 +16,7 @@
 
     .img-x-center(320px);
 
-    bottom: -18px;
+    bottom: -15px;
 
     width: 320px;
     height: 37px;
@@ -32,9 +32,9 @@
 .page-intro__header {
   margin: 20px 0px;
 
-  font-weight: bold;
   font-size: 18px;
   line-height: 26px;
+  font-weight: bold;
 
   text-align: center;
   text-transform: uppercase;
@@ -55,5 +55,35 @@
 
     font-size: 14px;
     line-height: 24px;
+  }
+}
+
+
+/**
+  * ===========================================================
+  * PAGE INTRO tablet
+  * ===========================================================
+  */
+
+@media @tablet-widths {
+  
+  .page-intro {
+    padding: 20px 60px;
+    
+    &--decorated::after {
+      display: none;
+    }
+  }
+  
+  .page-intro__header {
+    padding: 0px 10px;
+  
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+  }
+  
+  .page-intro__content {
+  
   }
 }
