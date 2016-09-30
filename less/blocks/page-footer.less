@@ -6,9 +6,9 @@
 
 .page-footer {
   margin: 0 auto;
-  padding: 20px 25px;
+  padding: 20px 0px;
 
-  max-width: @page-max-width - 50px;
+  max-width: @page-max-width;
 
   font-family: "PTSans", "Arial", sans-serif;
   font-weight: normal;
@@ -68,7 +68,9 @@
 @media @tablet-widths {
 
   .page-footer {
-    padding: 20px 60px;
+    max-width: @page-max-width;
+    margin: 0 auto;
+    padding: 20px 0px;
 
     .clearfix();
   }
@@ -77,6 +79,8 @@
 
     display: inline-block;
     vertical-align: top;
+
+    padding-left: 60px;
 
     float: left;
     margin: 27px 0px;
@@ -96,9 +100,10 @@
     display: inline-block;
     vertical-align: top;
 
-    float: right;
+    float: letf;
 
     margin: 20px 0px;
+    padding-right: 60px;
   }
 }
 

@@ -8,6 +8,7 @@
   max-width: @page-max-width;
   margin: 0 auto;
   padding-top: 20px;
+  padding-bottom: 80px;
 
   font-size: 14px;
   line-height: 24px;
@@ -40,6 +41,7 @@
   margin: 0 auto;
 
   width: 320px;
+  height: 267px;
 
   font-size: 0px;
 }
@@ -48,9 +50,13 @@
   display: block;
   margin: 0px;
   padding: 0px;
+
+  width: 100%;
+  height: 100%;
 }
 
 .video__controls {
+  display: block;
   margin: 0px 20px;
 
   background-color: #f2f2f2;
@@ -80,16 +86,67 @@
 
   &--repaly {
     float: left;
+    background-color: transparent;
     background-image: url("../img/icon-video-replay.svg");
   }
 
   &--subtitles {
     float: left;
+    background-color: transparent;
     background-image: url("../img/icon-video-subtitles.svg");
   }
 
   &--fullscreen {
     float: right;
+    background-color: transparent;
     background-image: url("../img/icon-video-fullscreen.svg");
+  }
+}
+
+/**
+  * ===========================================================
+  * PAGE INTRO tablet
+  * ===========================================================
+  */
+
+@media @tablet-widths {
+
+  .video {
+    padding: 75px 60px;
+    padding-bottom: 40px;
+
+    border: none;
+  }
+
+  .video__header {
+    
+    font-size: 30px;
+    line-height: 26px;
+  }
+
+  .video__content {
+    margin: 0px 90px;
+  }
+  
+  .video__item {
+    position: relative;
+    margin-top: 80px;
+    width: 648px;
+    height: 500px;
+  }
+  
+  .video__controls {
+    position: absolute;
+
+    bottom: 0px;
+    left: 0px;
+
+    margin: 0px;
+    width: 100%;
+
+    background-color: #000000;
+    opacity: 0.5;
+
+    z-index: 100;
   }
 }

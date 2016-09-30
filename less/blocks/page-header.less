@@ -13,8 +13,10 @@
 .page-header__logo {
   position: relative;
 
+  max-width: @page-max-width;
+  margin: 0 auto;
   height: 389px;
-
+  
   &--tiny {
     height: 156px;
   }
@@ -54,6 +56,16 @@
 
     z-index: 2;
   }
+}
+
+.page-header__bg-image-wrap {
+  position: relative;
+
+  max-width: @page-max-width;
+  margin: 0 auto;
+  height: 518px;
+  
+  overflow: hidden;
 }
 
 .page-header__bg-image {
@@ -121,6 +133,10 @@
 
   .page-header__logo {
     height: 518px;
+    
+    &--tiny {
+      height: 290px;
+    }
   }
 
   .page-header__bg-image {
@@ -137,5 +153,10 @@
     height: 350px;
 
     z-index: 1;
+  }
+
+  .page-header__logo-text {
+    margin-top: 55px;
+    transform: none;
   }
 }
