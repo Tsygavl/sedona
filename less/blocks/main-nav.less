@@ -128,6 +128,7 @@
 @media @tablet-widths {
 
   .main-nav__list {
+    display: flex;
 
     background-color: #ffffff;
 
@@ -139,13 +140,11 @@
   }
 
   .main-nav__item {
-    display: inline-block;
 
-    float: left;
     width: 20%;
 
-    &:nth-child(n + 3) {
-      float: right;
+    &:nth-child(3) {
+      margin-left: auto;
     }
     
     &:first-child .main-nav__link {
