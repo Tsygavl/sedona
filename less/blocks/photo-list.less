@@ -5,10 +5,6 @@
   */
 
 .photo-list {
-  max-width: @page-max-width;
-  margin: 0 auto;
-  padding: 0;
-
   font-family: "PTSans", "Arial", sans-serif;
   font-weight: normal;
 
@@ -18,8 +14,9 @@
 .photo-list__item {
   margin: 0 auto;
   padding: 20px;
+  padding-top: 22px;
+  padding-bottom: 9px;
 
-  
 
   font-size: 14px;
   line-height: 24px;
@@ -35,7 +32,7 @@
 
 .photo-list__item-caption {
   padding: 0px;
-  padding-top: 20px;
+  padding-top: 15px;
   margin: 0px auto;
 
   width: 280px;
@@ -60,8 +57,8 @@
   position: relative;
   margin: 0px;
   padding: 0px;
-  padding-left: 30px;
-  height: 35px;
+  padding-left: 33px;
+  height: 40px;
 
   font-size: 14px;
   line-height: 24px;
@@ -75,7 +72,7 @@
   &::before {
     content: '';
 
-    .absolute-top-left(5px, 0px, 22px, 20px);
+    .absolute-top-left(7px, 0px, 22px, 20px);
 
     background-image: url('../img/icon-like.svg');
     background-repeat: no-repeat;

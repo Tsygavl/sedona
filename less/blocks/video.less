@@ -5,23 +5,24 @@
   */
 
 .video {
-  max-width: @page-max-width;
-  margin: 0 auto;
-  padding-top: 20px;
-  padding-bottom: 80px;
+
+  padding: 0px;
+  padding-top: 31px;
+  padding-bottom: 40px;
 
   font-size: 14px;
   line-height: 24px;
   font-family: "PTSans", "Arial", sans-serif;
   font-weight: normal;
 
-  background-color: #ffffff;
+  background-color: #fefefe;
   border-top: 1px solid #e5e5e5; 
 }
 
 .video__header {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 26px;
 
   font-size: 18px;
   line-height: 26px;
@@ -31,17 +32,19 @@
 }
 
 .video__content {
-  padding: 0px 30px;
+  padding: 0px;
+  margin: 0px 30px;
+  margin-bottom: 37px;
 
   text-align: center;
   text-transform: uppercase;
 }
 
 .video__item {
-  margin: 0 auto;
+  padding-bottom: 66px; 
 
   width: 320px;
-  height: 267px;
+  height: 200px;
 
   font-size: 0px;
 }
@@ -56,8 +59,21 @@
 }
 
 .video__controls {
-  display: block;
+  position: relative;
+
   margin: 0px 20px;
+  margin-top: -45px;
+}
+
+.video__control-slider {
+  height: 45px;
+
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+.video__control-btns {
+  padding: 0px 15px;
 
   background-color: #f2f2f2;
 
@@ -67,11 +83,13 @@
 .video__control-btn {
 
   display: inline-block;
-  margin: 0px;
+  margin: 15px;
+  margin-left: 0px;
+  margin-right: 0px;
   padding: 0px;
 
-  width: 66px;
-  height: 66px;
+  width: 36px;
+  height: 36px;
 
   font-size: 0px;
 
@@ -91,7 +109,8 @@
   }
 
   &--subtitles {
-    float: left;
+    float: right;
+    margin-right: 20px;
     background-color: transparent;
     background-image: url("../img/icon-video-subtitles.svg");
   }

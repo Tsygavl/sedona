@@ -6,7 +6,7 @@
 
 .page-footer {
   margin: 0 auto;
-  padding: 20px 0px;
+  padding: 18px 0px;
 
   max-width: @page-max-width;
 
@@ -28,7 +28,8 @@
 
 .page-footer__copyright {
   position: relative;
-  margin-top: 32px;
+
+  margin-top: 36px;
 
   font-size: 14px;
   line-height: 26px;
@@ -44,18 +45,25 @@
 
   color: #000000;
   text-decoration: none;
+}
 
-  &::after {
-    content: '';
+.page-footer__copyright-icon {
+  
+  position: absolute;
+    
+  right: 84px;
+    
+  width: 52px;
+  height: 42px;
 
-    position: absolute;
+  cursor: pointer;
 
-    width: 52px;
-    height: 42px;
+  &:hover path {
+    fill: #81b3d2;
+  }
 
-    background-image: url('../img/htmlacademy.svg');
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
+  &:active path {
+    fill: #b2b2b2;
   }
 }
 
