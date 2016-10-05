@@ -150,32 +150,37 @@
 
 /**
   * ===========================================================
-  * PAGE INTRO tablet
+  * VIDEO tablet
   * ===========================================================
   */
 
 @media @tablet-widths {
 
   .video {
-    padding: 75px 60px;
+    padding: 46px 60px;
     padding-bottom: 40px;
 
     border: none;
   }
 
   .video__header {
-    
+    margin-bottom: 29px;
+
     font-size: 30px;
     line-height: 26px;
   }
 
   .video__content {
-    margin: 0px 90px;
+    margin: 0px 105px;
   }
   
   .video__item {
     position: relative;
-    margin-top: 80px;
+    
+    padding: 0px;
+    maring: 0px;
+    margin-top: 74px;
+
     width: 648px;
     height: 500px;
   }
@@ -187,12 +192,46 @@
     left: 0px;
 
     margin: 0px;
-    width: 100%;
-
-    background-color: #000000;
-    opacity: 0.5;
+    width: 648px;
 
     z-index: 100;
+  }
+
+  .video__control-slider {
+    position: absolute;
+
+    top: 45px;
+    left: 0px;
+
+    padding: 0px;
+    margin-left: 93px;
+
+    width: 389px;
+  }
+
+  .video__control-slider-toggle {
+      
+      left: 113px;
+
+      margin-top: -5px;
+  }
+
+  .video__control-btns {
+    
+    padding: 0px;
+    padding-left: 25px;
+    padding-right: 33px;
+
+    height: 93px;
+
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .video__control-btn {
+    
+    margin-top: 28px;
+
+    filter: brightness(0%) invert(100%);
   }
 }
 
