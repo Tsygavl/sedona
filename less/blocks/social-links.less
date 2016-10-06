@@ -30,29 +30,31 @@
     background-color: #5496bd;
   }
 
-  &--tw:active .social-link__icon-tw {
-    fill: #88b6d1;
+  &:active::before {
+     filter: none;
   }
 
-  &--fb:active .social-link__icon-fb {
-    fill: #88b6d1;
+  &::before {
+    content: "";
+    
+    .absolute-top-left(0px, 0px, 46px, 48px);
+
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+
+    filter: brightness(0%) invert(100%);
   }
 
-  &--ub:active .social-link__icon-ub {
-    fill: #88b6d1;
+  &--tw::before {
+    background-image: url("../img/icon-twitter.svg");
+  }
+
+  &--fb::before {
+    background-image: url("../img/icon-facebook.svg");
+  }
+
+  &--ub::before {
+    background-image: url("../img/icon-youtube.svg");
   }
 }
-
-.social-link__icon-tw {
-  .img-center(17.5px, 14.7px);
-}
-
-.social-link__icon-fb {
-  .img-center(8.67px, 18.94px);
-}
-
-.social-link__icon-ub {
-  .img-center(19.98px, 14.01px);
-}
-
 
