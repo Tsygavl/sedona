@@ -6,6 +6,7 @@
 
 .recall-form {
   display: flex;
+  position: relative;
   flex-direction: column;
 
   padding-bottom: 37px;
@@ -30,7 +31,7 @@
   padding: 16px 20px;
 
   width: 100%;
-  min-width: 120px;
+  min-width: 100px;
 
   font-size: 18px;
   line-height: 26px;
@@ -407,6 +408,10 @@
   resize: none;
 }
 
+.recall-form__wran-message {
+  display: none;
+}
+
 .recall-form__btn {
   margin: 0px 20px;
 
@@ -416,7 +421,7 @@
 
 /**
   * ===========================================================
-  * MAIN NAVIGATION tablet
+  * RECALL FORM tablet
   * ===========================================================
   */
 
@@ -427,76 +432,43 @@
     flex-wrap: wrap;
 
     padding: 60px; 
-    padding-top: 15px;
+    padding-top: 8px;
   }
 
-  .recall-form__section:nth-child(1) {
-    order: 2;
-
-    margin: 0px;
-
-    width: 50%;
-
-    border: none;
-  }
-
-  .recall-form__section:nth-child(2) {
-    order: 3;
-
-    margin-top: 50px;
-
-    width: 100%;
-
-    & .recall-form__title {
-      position: relative;
-      
-      padding: 0px 70px;
-      
-      transform: none;
-    }
-  }
-
-  .recall-form__section:nth-child(3) {
-    order: 1;
-
-    margin: 0px;
-
-    width: 50%;
-
-    border: none;
-  }
-
-  .recall-form__section:nth-child(4) {
-    order: 4;
-
-    margin-top: 30px;
-
-    width: 100%;
-
-    & .recall-form__title {
-      position: relative;
-      
-      padding: 0px 40px;
-      width: 300px;
-      
-      transform: none;
-    }
-  }
-
-  .recall-form__section:nth-child(5) {
-    order: 5;
+  .recall-form__section {
     
-    margin-top: 40px;
+    margin: 0px;
+    width: 648px;
 
-    width: 100%;
-
-    & .recall-form__title {
-      position: relative;
-      
-      padding: 0px 40px;
-      
-      transform: none;
+    &--id {
+      order: 2;
+      width: 270px;
+      border: none;
     }
+
+    &--contacts {
+      order: 3;
+      margin-top: 42px;
+    }
+
+    &--interview {
+      order: 1;
+      margin-right: auto;
+      width: 324px;
+      border: none;
+      box-shadow: 24px 0px 0px -23px #dbdbdb;
+    }
+
+    &--visited {
+      order: 4;
+      margin-top: 23px;
+    }
+
+    &--message {
+      order: 5;
+      margin-top: 40px;
+    }
+
   }
 
   .recall-form__title {
@@ -504,16 +476,38 @@
 
     font-size: 21px;
     line-height: 26px;
+
+    &--highlight {
+      position: relative;
+
+      padding: 0px 50px;
+      width: 300px;
+
+      transform: none;
+    }
+  }
+
+  .recall-form__radio-label {
+    margin-left: 75px;
+  }
+
+  .recall-form__invalid-message {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+
+    padding: 0px;
   }
 
   .recall-form__id {
     margin-top: 103px;
+    width: 270px;
   }
 
   .recall-form__id-item {
-    margin-left: 55px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
-
 
   .recall-form__interview {
     margin-top: 103px;
@@ -521,49 +515,67 @@
 
   .recall-form__interview-item {
     margin-left: 0px;
+    margin-bottom: 21px;
   }
 
   .recall-form__contacts {
-    margin-top: 25px;
+    margin-top: 23px;
   }
 
   .recall-form__contacts-item {
     position: relative;
     margin: 0px;
-    margin-bottom: 25px;
-  }
-
-  .recall-form__invalid-message {
-    position: absolute;
-    top: 0px;
-    right: 0px;
+    margin-bottom: 24px;
   }
 
   .recall-form__visited {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    columns: 2;
+    column-gap: 57px;
 
     margin: 0 auto;
-    margin-top: 40px;
+    margin-top: 43px;
+
+    width: 460px;
   }
 
   .recall-form__visited-item {
-    margin-left: 30px;
+    display: block;
+
+    margin: 0px; 
     margin-bottom:  30px;
-    min-width: 210px;
   }
 
   .recall-form__message-wrap {
     margin-left: 0px;
     margin-right: 0px;
-    margin-bottom: 60px;
+    margin-top: 57px;
+    margin-bottom: 54px;
+  }
+
+  .recall-form__bottom-wrap {
+    order: 100;
+
+    width: 100%;
+  }
+
+  .recall-form__wran-message {
+    display: inline-block;
+    
+    float: right;
+
+    margin-top: 18px;
   }
 
   .recall-form__btn {
     order: 6;
 
+    margin: 0px;
     min-width: 325px;
+    padding-left: 60px;
+    
+    float: left;
+
+    text-align: left;
   }
 
 }

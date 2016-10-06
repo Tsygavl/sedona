@@ -47,7 +47,7 @@
         <p class="page-intro__content  page-intro__content--tiny">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </section>
       <form class="recall-form" action="" method="post">
-        <fieldset class="recall-form__section">
+        <fieldset class="recall-form__section  recall-form__section--id">
           <legend class="recall-form__title" align="center">Представьтесь<span class="tablet-hidden">, пожалуйста</span>:</legend>
           <ul class="recall-form__id">
             <li class="recall-form__id-item">
@@ -64,8 +64,8 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="recall-form__section">
-          <legend class="recall-form__title" align="center">Контактная информация:</legend>
+        <fieldset class="recall-form__section  recall-form__section--contacts">
+          <legend class="recall-form__title  recall-form__title--highlight" align="center">Контактная информация:</legend>
           <ul class="recall-form__contacts">
             <li class="recall-form__contacts-item">
               <label class="recall-form__contacts-label" for="tel">Контактный телефон:</label>
@@ -84,7 +84,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="recall-form__section">
+        <fieldset class="recall-form__section  recall-form__section--interview">
           <legend class="recall-form__title" align="center">Ваше общее впечатление:</legend>
           <ul class="recall-form__interview">
             <li class="recall-form__interview-item">
@@ -110,8 +110,8 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="recall-form__section">
-          <legend class="recall-form__title" align="center">Посещенные достопримечательности:</legend>
+        <fieldset class="recall-form__section  recall-form__section--visited">
+          <legend class="recall-form__title  recall-form__title--highlight" align="center">Посещенные достопримечательности:</legend>
           <ul class="recall-form__visited">
             <li class="recall-form__visited-item">
               <label class="recall-form__checkbox-control">
@@ -143,13 +143,16 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="recall-form__section">
-          <legend class="recall-form__title" align="center">Опишите свои эмоции:</legend>
+        <fieldset class="recall-form__section  recall-form__section--message">
+          <legend class="recall-form__title  recall-form__title--highlight" align="center">Опишите свои эмоции:</legend>
           <div class="recall-form__message-wrap">
             <textarea class="recall-form__message-input" id="message" name="message" placeholder="Опишите подробно все свои восторги"></textarea>
           </div>
         </fieldset>
-        <input class="btn  recall-form__btn" type="submit" value="Отправить отзыв">
+        <div class="recall-form__bottom-wrap">
+          <span class="recall-form__wran-message">* ‒ Обязательные поля</span>
+          <input class="btn  recall-form__btn" type="submit" value="Отправить отзыв">
+        </div>
       </form>
     </main>
     <footer class="page-footer">
