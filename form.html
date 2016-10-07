@@ -48,7 +48,9 @@
       </section>
       <form class="recall-form" action="" method="post">
         <fieldset class="recall-form__section  recall-form__section--id">
-          <legend class="recall-form__title" align="center">Представьтесь<span class="tablet-hidden">, пожалуйста</span>:</legend>
+          <legend class="recall-form__title" align="center">
+            Представьтесь<span class="visually-hidden-tablet">, пожалуйста</span>:
+          </legend>
           <ul class="recall-form__id">
             <li class="recall-form__id-item">
               <label class="recall-form__id-label" for="name">Имя:</label>
@@ -68,12 +70,14 @@
           <legend class="recall-form__title  recall-form__title--highlight" align="center">Контактная информация:</legend>
           <ul class="recall-form__contacts">
             <li class="recall-form__contacts-item">
-              <label class="recall-form__contacts-label" for="tel">Телефон:</label>
+              <label class="recall-form__contacts-label" for="tel">
+              <span class="visually-hidden-desktop">Контактный</span> телефон:
+              </label>
               <div class="recall-form__contacts-input">
                 <input type="tel" id="tel" name="tel" placeholder="Введите телефон">
                 <button class="recall-form__input-btn  recall-form__input-btn--phone" type="button">Набрать номер</button>
+                <span class="recall-form__invalid-msg  recall-form__invalid-msg--tel">Ошибка, перепроверьте номер</span>
               </div>
-              <span class="recall-form__invalid-message">Ошибка, перепроверьте номер</span>
             </li>
             <li class="recall-form__contacts-item">
               <label class="recall-form__contacts-label" for="email">Электронная почта:</label>

@@ -27,9 +27,23 @@ body {
   display: none;
 }
 
-@media @tablet-widths {
+@media @only-mobile-widths {
 
-  .tablet-hidden {
+  .visually-hidden-mobile {
+    display: none;
+  }
+}
+
+@media @only-tablet-widths {
+
+  .visually-hidden-tablet {
+    display: none;
+  }
+}
+
+@media @only-desktop-widths {
+
+  .visually-hidden-desktop {
     display: none;
   }
 }
