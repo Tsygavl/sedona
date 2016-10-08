@@ -111,3 +111,57 @@
     opacity: 1;
   }
 }
+
+/**
+  * ===========================================================
+  * MAIN NAVIGATION tablet
+  * ===========================================================
+  */
+
+@media @tablet-widths {
+
+  .modal-dialog {
+
+    margin-left: -200px;
+    margin-top: -200px;
+
+    &--success {
+      margin-left: -320px;
+      margin-top: -175px;
+    }
+
+    &--success .modal-dialog__wrap {
+      padding-bottom: 25px;
+      width: 560px;
+    }
+
+    &--success .modal-dialog__content {
+      padding: 0px 70px;
+    }
+  }
+
+  .modal-dialog__wrap {
+    width: 320px;
+  }
+
+  .modal-dialog__header {
+    margin: 15px 40px;
+    margin-bottom: 25px;
+
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .modal-dialog__btn-ok {
+    margin: 25px;
+    margin-bottom: 20px;
+
+    min-width: 272px;
+  }
+
+  .modal-dialog__btn-cancel {
+    margin: 45px;
+
+    min-width: 458px;
+  }
+}
