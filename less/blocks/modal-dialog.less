@@ -5,26 +5,56 @@
   */
 
 .modal-dialog {
+  display: none;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+
   margin: 0px;
+  margin-left: -160px;
+  margin-top: -160px;
   padding: 0px;
-  
+
+  min-height: 160px;
+
   font-size: 14px;
   line-height: 24px;
   font-family: "PTSans", "Arial", sans-serif;
   font-weight: normal;
+  color: #000000;
 
   background-color: #f2f2f2;
+  box-shadow: 0px 10px 35px -20px rgba(0, 0, 0, 0.7),
+    0px 0px 15px -20px rgba(0, 0, 0, 0.7);
 
   text-align: center;
-  
+
+  z-index: 500;
+
+  &--failure .modal-dialog__wrap {
+    padding-bottom: 32px;
+  }
+
+  &--success .modal-dialog__wrap {
+    padding-bottom: 30px;
+  }
+
   &--hide {
     display: none;
+  }
+
+  &--show {
+    display: block;
+    animation: zoomin 0.5s;
   }
 }
 
 .modal-dialog__wrap {
   margin: 0px;
-  padding: 30px 40px;
+  padding: 42px 40px;
+
+  width: 240px;
 
   background-color: #ffffff;
 
@@ -33,7 +63,7 @@
 
 .modal-dialog__header {
   margin: 0px;
-  margin-top: 10px;
+  margin-top: 0px;
   margin-bottom: 25px;
 
   font-size: 18px;
@@ -60,7 +90,24 @@
   margin: 20px;
 
   min-width: 280px;
-  
+
   font-size: 18px;
   line-height: 26px;
+}
+
+/**
+  * ===========================================================
+  * MODAL DIALOGS animation
+  * ===========================================================
+  */
+
+@keyframes zoomin {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+  50% {
+    opacity: 1;
+  }
 }
