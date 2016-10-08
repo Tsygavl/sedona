@@ -13,6 +13,10 @@
   font-weight: bold;
 
   z-index: 100;
+
+  &--nojs .main-nav__btn {
+    display: none;
+  }
 }
 
 .main-nav__list {
@@ -49,21 +53,22 @@
   box-shadow: inset 0px -1px 0px #678fa8,
     inset 0px 1px 0px #9ac2db;
 
-  cursor: pointer;
-
-  &:hover {
+  &[href]:hover {
     background-color: #669ec0;
+    cursor: pointer;
   }
 
-  &:active {
+  &[href]:active {
     background-color: #5496bd;
     color: #88b6d1;
+    cursor: pointer;
   }
 }
 
 .main-nav__control {
   position: relative;
 
+  min-height: 56px;
   background-color: #ffffff;
 
   .clearfix();
@@ -85,6 +90,7 @@
   background-color: transparent;
   cursor: pointer;
   border: none;
+  outline: none;
 }
 
 .main-nav__btn-open {
@@ -123,6 +129,7 @@
 
   .main-nav__list {
     display: flex;
+    flex-wrap: wrap;
 
     background-color: #ffffff;
 
@@ -162,12 +169,12 @@
     background-color: #ffffff;
     box-shadow: none;
 
-    &:hover {
+    &[href]:hover {
       background-color: #ffffff;
       color: #81b3d2;
     }
 
-    &:active {
+    &[href]:active {
       background-color: #ffffff;
       color: #b2b2b2;
     }

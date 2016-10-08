@@ -8,6 +8,8 @@ var mainNvaigationItems = mainNavigation.querySelector(".main-nav__list");
 var btnOpenNavigation = mainNavigation.querySelector(".main-nav__btn-open");
 var btnCloseNavigation = mainNavigation.querySelector(".main-nav__btn-close");
 
+mainNavigation.classList.remove("main-nav--nojs");
+
 
 btnOpenNavigation.addEventListener("click", function() {
 

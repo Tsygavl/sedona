@@ -229,18 +229,30 @@
 
   .page-header__logo-image-wrap {
 
+    position: relative;
+
+    overflow: hidden;
+
+    .img-x-center(190px);
+
+    top: -56px;
+
+    width: 190px;
+    height: 193px;
+
     &::before {
       content: "";
 
       position: absolute;
 
-      top: -45px;
-      left: -9px;
+      top: -44px;
+      left: 35px;
 
       width: 50px;
       height: 150px;
 
-      border-radius: 15px;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
 
       background-color: #81b3d2;
 
@@ -254,13 +266,14 @@
 
       position: absolute;
 
-      top: -45px;
-      right: -9px;
+      top: -44px;
+      right: 37px;
 
       width: 50px;
       height: 150px;
 
-      border-radius: 15px;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
 
       background-color: #81b3d2;
 
@@ -268,6 +281,13 @@
 
       z-index: -1;
     }
+  }
+
+  .page-header__logo-image {
+
+    .img-x-center(102px);
+
+    margin-left: -52px;
   }
 
   .page-header__logo-text {
