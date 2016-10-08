@@ -6,8 +6,8 @@
 
 .page-intro {
   position: relative;
-  padding: 20px 21px;
-  padding-bottom: 15px;
+  padding: 20px 25px;
+  padding-bottom: 25px;
 
   background-color: #ffffff;
 
@@ -16,7 +16,7 @@
 
     .img-x-center(320px);
 
-    bottom: -18px;
+    bottom: -19px;
 
     width: 320px;
     height: 37px;
@@ -27,14 +27,19 @@
 
     z-index: 2;
   }
+
+  &--tiny {
+    padding: 18px 20px;
+    margin-bottom: -1px;
+  }
 }
 
 .page-intro__header {
   margin: 20px 0px;
 
-  font-weight: bold;
   font-size: 18px;
   line-height: 26px;
+  font-weight: bold;
 
   text-align: center;
   text-transform: uppercase;
@@ -42,7 +47,7 @@
 
 .page-intro__content {
   margin: 25px 0px;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 
   font-size: 14px;
   line-height: 26px;
@@ -51,9 +56,88 @@
   text-transform: uppercase;
 
   &--tiny {
-    margin-bottom: 0px;
+    margin-bottom: 2px;
 
     font-size: 14px;
     line-height: 24px;
+  }
+}
+
+
+/**
+  * ===========================================================
+  * PAGE INTRO tablet
+  * ===========================================================
+  */
+
+@media @tablet-widths {
+  
+  .page-intro {
+    padding: 28px 85px;
+    padding-bottom: 40px;
+    
+    &--decorated::after {
+      display: none;
+    }
+  }
+  
+  .page-intro__header {
+    padding: 0px 10px;
+    margin-top: 22px;
+  
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+
+    &--large {
+      margin-top: 47px;
+
+      font-size: 30px;
+      line-height: 26px;
+    }
+  }
+  
+  .page-intro__content {
+    margin-top: 28px;
+    margin-bottom: 11px;
+
+    &--tiny {
+      padding: 0px 80px;
+    }
+  }
+}
+
+
+/**
+  * ===========================================================
+  * PAGE INTRO desktop
+  * ===========================================================
+  */
+
+@media @desktop-widths {
+
+  .page-intro {
+    padding: 28px 85px;
+    padding-bottom: 40px;
+    
+    &--tiny {
+      padding-bottom: 10px;
+    }
+  }
+  
+  .page-intro__header {
+    padding: 0px 210px;
+
+    &--large {
+      margin-top: 85px;
+    }
+  }
+
+  .page-intro__content {
+
+    &--tiny {
+      margin-bottom: 33px;
+      padding: 0px 295px;
+    }
   }
 }

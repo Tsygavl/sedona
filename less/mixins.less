@@ -7,6 +7,19 @@
   }
 }
 
+.adaptive-container() {
+  width: @mobile-max-width;
+  margin: 0 auto;
+
+  @media @tablet-widths {
+    width: @tablet-max-width;
+  }
+
+  @media @desktop-widths {
+    width: @desktop-max-width;
+  }
+}
+
 /**
   * Выравнивает картинку по центру родительского блока
   * Родитель: position: realtive;
@@ -36,6 +49,15 @@
 .text-vertical-align(@height) {
   line-height: @height;
   vertical-align: middle;
+}
+
+/**
+  * Выравнить блок по горизонтале
+  *
+  */
+.block-center(@width) {
+  width: @width;
+  margin: 0 auto;
 }
 
 /**

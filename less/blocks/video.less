@@ -5,22 +5,24 @@
   */
 
 .video {
-  max-width: @page-max-width;
-  margin: 0 auto;
-  padding-top: 20px;
+
+  padding: 0px;
+  padding-top: 31px;
+  padding-bottom: 40px;
 
   font-size: 14px;
   line-height: 24px;
   font-family: "PTSans", "Arial", sans-serif;
   font-weight: normal;
 
-  background-color: #ffffff;
+  background-color: #fefefe;
   border-top: 1px solid #e5e5e5; 
 }
 
 .video__header {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 26px;
 
   font-size: 18px;
   line-height: 26px;
@@ -30,16 +32,19 @@
 }
 
 .video__content {
-  padding: 0px 30px;
+  padding: 0px;
+  margin: 0px 30px;
+  margin-bottom: 37px;
 
   text-align: center;
   text-transform: uppercase;
 }
 
 .video__item {
-  margin: 0 auto;
+  padding-bottom: 66px; 
 
   width: 320px;
+  height: 200px;
 
   font-size: 0px;
 }
@@ -48,10 +53,53 @@
   display: block;
   margin: 0px;
   padding: 0px;
+
+  width: 100%;
+  height: 100%;
 }
 
 .video__controls {
+  position: relative;
+
   margin: 0px 20px;
+  margin-top: -45px;
+}
+
+.video__control-slider {
+  position: relative;
+
+  padding: 20px 22px;
+  padding-top: 22px;
+
+  height: 3px;
+
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.video__control-slider-line {
+
+  height: 3px;
+
+  background-color: rgba(225, 225, 255, 0.3);;
+}
+
+.video__control-slider-toggle {
+  position: absolute;
+  
+  width: 9px;
+  height: 9px;
+
+  top: 50%;
+  left: 58px;
+
+  margin-top: -3px;
+
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+.video__control-btns {
+  padding: 0px 15px;
 
   background-color: #f2f2f2;
 
@@ -61,11 +109,13 @@
 .video__control-btn {
 
   display: inline-block;
-  margin: 0px;
+  margin: 15px;
+  margin-left: 0px;
+  margin-right: 0px;
   padding: 0px;
 
-  width: 66px;
-  height: 66px;
+  width: 36px;
+  height: 36px;
 
   font-size: 0px;
 
@@ -80,16 +130,137 @@
 
   &--repaly {
     float: left;
+    background-color: transparent;
     background-image: url("../img/icon-video-replay.svg");
   }
 
   &--subtitles {
-    float: left;
+    float: right;
+    margin-right: 22px;
+    background-color: transparent;
     background-image: url("../img/icon-video-subtitles.svg");
   }
 
   &--fullscreen {
     float: right;
+    background-color: transparent;
     background-image: url("../img/icon-video-fullscreen.svg");
   }
+}
+
+/**
+  * ===========================================================
+  * VIDEO tablet
+  * ===========================================================
+  */
+
+@media @tablet-widths {
+
+  .video {
+    padding: 46px 60px;
+    padding-bottom: 40px;
+
+    border: none;
+  }
+
+  .video__header {
+    margin-bottom: 29px;
+
+    font-size: 30px;
+    line-height: 26px;
+  }
+
+  .video__content {
+    margin: 0px 105px;
+  }
+  
+  .video__item {
+    position: relative;
+    
+    padding: 0px;
+    margin: 0 auto;
+    margin-top: 74px;
+
+    width: 648px;
+    height: 500px;
+  }
+  
+  .video__controls {
+    position: absolute;
+
+    bottom: 0px;
+    left: 0px;
+
+    margin: 0px;
+    width: 100%;
+
+    z-index: 100;
+  }
+
+  .video__control-slider {
+    position: absolute;
+
+    top: 45px;
+    left: 0px;
+
+    padding: 0px;
+    margin-left: 93px;
+
+    width: 389px;
+  }
+
+  .video__control-slider-toggle {
+      
+      left: 113px;
+
+      margin-top: -5px;
+  }
+
+  .video__control-btns {
+    
+    padding: 0px;
+    padding-left: 25px;
+    padding-right: 33px;
+
+    height: 93px;
+
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .video__control-btn {
+    
+    margin-top: 28px;
+
+    filter: brightness(0%) invert(100%);
+  }
+}
+
+/**
+  * ===========================================================
+  * VIDEO desktop
+  * ===========================================================
+  */
+
+@media @desktop-widths {
+  
+  .video {
+    padding-top: 71px;
+    padding-bottom: 85px;
+  }
+
+  .video__content {
+    margin: 0px 320px;
+  }
+
+  .video__item {
+    margin-top: 72px;
+
+    width: 800px;
+    height: 500px;
+  }
+
+  .video__control-slider {
+    width: 540px;
+  }
+
 }

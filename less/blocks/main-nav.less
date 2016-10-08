@@ -1,6 +1,6 @@
 /**
   * ===========================================================
-  * MAIN NAVIGATION
+  * MAIN NAVIGATION mobile
   * ===========================================================
   */
 
@@ -15,51 +15,28 @@
   z-index: 100;
 }
 
-.main-nav__btn-close {
-
-  .absolute-top-right(0px; 0px; 53px; 46px);
-
-  margin: 5px;
-  padding: 0px;
-
-  font-size: 0px;
-
-  background-color: transparent;
-  cursor: pointer;
-  border: none;
-
-  &::before {
-    content: "";
-
-    .absolute-top-right(0px; 0px; 53px; 46px);
-
-    cursor: pointer;
-
-    background-image: url('../img/icon-cross.svg');
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-  }
-}
-
 .main-nav__list {
   margin: 0;
   padding: 0;
 
   list-style-type: none;
+
+  overflow: hidden;
 }
 
-.main-nav__list .main-nav__item {
+.main-nav__item {
 
-  &:first-child a {
+  &:first-child .main-nav__link {
     box-shadow: inset 0px -1px 0px #678fa8;
   }
 
-  &:last-child a {
-    box-shadow: inset 0px 1px 0px #9ac2db;
+  &:last-child .main-nav__link {
+    box-shadow: inset 0px 1px 0px #9ac2db,
+      inset 0px -5px 12px -10px #000000;
   }
 }
 
-.main-nav__list a {
+.main-nav__link {
   display: block;
   padding: 8px 20px;
 
@@ -71,6 +48,8 @@
   background-color: #81b3d2;
   box-shadow: inset 0px -1px 0px #678fa8,
     inset 0px 1px 0px #9ac2db;
+
+  cursor: pointer;
 
   &:hover {
     background-color: #669ec0;
@@ -90,7 +69,7 @@
   .clearfix();
 }
 
-.main-nav__btn-toggle {
+.main-nav__btn {
   position: relative;
 
   float: right;
@@ -106,14 +85,110 @@
   background-color: transparent;
   cursor: pointer;
   border: none;
-  
+}
+
+.main-nav__btn-open {
+
+  &::before {
+    content: "";
+
+    .absolute-top-left(-1px; 0px; 53px; 46px);
+
+    background-image: url("../img/icon-menu.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+}
+
+.main-nav__btn-close {
+
   &::before {
     content: "";
 
     .absolute-top-left(0px; 0px; 53px; 46px);
 
-    background-image: url('../img/icon-menu.svg');
+    background-image: url("../img/icon-cross.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
 }
+
+/**
+  * ===========================================================
+  * MAIN NAVIGATION tablet
+  * ===========================================================
+  */
+
+@media @tablet-widths {
+
+  .main-nav__list {
+    display: flex;
+
+    background-color: #ffffff;
+
+    .clearfix();
+  }
+
+  .main-nav__btn-close {
+    display: none;
+  }
+
+  .main-nav__item {
+
+    width: 20%;
+
+    &:nth-child(3) {
+      margin-left: auto;
+    }
+
+    &:first-child .main-nav__link {
+      box-shadow: none;
+    }
+
+    &:last-child .main-nav__link {
+      box-shadow: none;
+    }
+  }
+
+  .main-nav__link {
+    padding: 15px 20px;
+    padding-right: 16px;
+
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 25px;
+
+    color: #000000;
+    background-color: #ffffff;
+    box-shadow: none;
+
+    &:hover {
+      background-color: #ffffff;
+      color: #81b3d2;
+    }
+
+    &:active {
+      background-color: #ffffff;
+      color: #b2b2b2;
+    }
+
+    &--active {
+      color: #766357;
+
+      &:hover {
+        background-color: #ffffff;
+        color: #604e43;
+      }
+
+      &:active {
+        background-color: #ffffff;
+        color: #d6d0cc;
+      }
+    }
+  }
+
+  .main-nav__control {
+    display: none;
+  }
+}
+
