@@ -11,24 +11,24 @@ var btnCloseNavigation = mainNavigation.querySelector(".main-nav__btn-close");
 
 btnOpenNavigation.addEventListener("click", function() {
 
-	if (mainNvaigationItems.classList.contains("visually-hidden")) {
+	if (mainNvaigationItems.classList.contains("hidden")) {
 
-		mainNvaigationItems.classList.remove("visually-hidden");
+		mainNvaigationItems.classList.remove("hidden");
 
-		btnOpenNavigation.classList.add("visually-hidden");
-		btnCloseNavigation.classList.remove("visually-hidden");
+		btnOpenNavigation.classList.add("hidden");
+		btnCloseNavigation.classList.remove("hidden");
 	}
 });
 
 
 btnCloseNavigation.addEventListener("click", function() {
 
-	if (!mainNvaigationItems.classList.contains("visually-hidden")) {
+	if (!mainNvaigationItems.classList.contains("hidden")) {
 
-		mainNvaigationItems.classList.add("visually-hidden");
+		mainNvaigationItems.classList.add("hidden");
 
-		btnOpenNavigation.classList.remove("visually-hidden");
-		btnCloseNavigation.classList.add("visually-hidden");
+		btnOpenNavigation.classList.remove("hidden");
+		btnCloseNavigation.classList.add("hidden");
 	}
 });
 

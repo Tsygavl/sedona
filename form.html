@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона Форма</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -26,7 +27,7 @@
           </li>
         </ul>
         <div class="main-nav__control">
-          <button class="main-nav__btn  main-nav__btn-open  visually-hidden" type="button">Открыть меню</button>
+          <button class="main-nav__btn  main-nav__btn-open  hidden" type="button">Открыть меню</button>
           <button class="main-nav__btn  main-nav__btn-close" type="button">Закрыть меню</button>
         </div>
       </nav>
@@ -46,28 +47,28 @@
         <h2 class="page-intro__header  page-intro__header--large">Оставьте свой отзыв</h2>
         <p class="page-intro__content  page-intro__content--tiny">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </section>
-      <form class="recall-form" action="" method="post">
+      <form class="recall-form" action="/" method="post">
         <fieldset class="recall-form__section  recall-form__section--id">
-          <legend class="recall-form__title" align="center">
+          <legend class="recall-form__title">
             Представьтесь<span class="visually-hidden-tablet">, пожалуйста</span>:
           </legend>
           <ul class="recall-form__id">
             <li class="recall-form__id-item">
               <label class="recall-form__id-label" for="name">Имя:</label>
-              <input type="text" name="name" placeholder="Петр">
+              <input type="text" id="name" name="name" placeholder="Петр">
             </li>
             <li class="recall-form__id-item">
               <label class="recall-form__id-label" for="surname">Фамилия:</label>
-              <input type="text" name="surname" placeholder="Иванов">
+              <input type="text" id="surname" name="surname" placeholder="Иванов">
             </li>
             <li class="recall-form__id-item">
               <label class="recall-form__id-label" for="middlename">Отчество:</label>
-              <input type="text" name="middlename" placeholder="Александрович">
+              <input type="text" id="middlename" name="middlename" placeholder="Александрович">
             </li>
           </ul>
         </fieldset>
         <fieldset class="recall-form__section  recall-form__section--contacts">
-          <legend class="recall-form__title  recall-form__title--highlight" align="center">Контактная информация:</legend>
+          <legend class="recall-form__title  recall-form__title--highlight">Контактная информация:</legend>
           <ul class="recall-form__contacts">
             <li class="recall-form__contacts-item">
               <label class="recall-form__contacts-label" for="tel">
@@ -89,7 +90,7 @@
           </ul>
         </fieldset>
         <fieldset class="recall-form__section  recall-form__section--interview">
-          <legend class="recall-form__title" align="center">Ваше общее впечатление:</legend>
+          <legend class="recall-form__title">Ваше общее впечатление:</legend>
           <ul class="recall-form__interview">
             <li class="recall-form__interview-item">
               <label class="recall-form__radio-control">
@@ -115,7 +116,7 @@
           </ul>
         </fieldset>
         <fieldset class="recall-form__section  recall-form__section--visited">
-          <legend class="recall-form__title  recall-form__title--highlight" align="center">Посещенные достопримечательности:</legend>
+          <legend class="recall-form__title  recall-form__title--highlight">Посещенные достопримечательности:</legend>
           <ul class="recall-form__visited">
             <li class="recall-form__visited-item">
               <label class="recall-form__checkbox-control">
@@ -148,7 +149,7 @@
           </ul>
         </fieldset>
         <fieldset class="recall-form__section  recall-form__section--message">
-          <legend class="recall-form__title  recall-form__title--highlight" align="center">Опишите свои эмоции:</legend>
+          <legend class="recall-form__title  recall-form__title--highlight">Опишите свои эмоции:</legend>
           <div class="recall-form__message-wrap">
             <textarea class="recall-form__message-input" id="message" name="message" placeholder="Опишите подробно все свои восторги"></textarea>
           </div>
