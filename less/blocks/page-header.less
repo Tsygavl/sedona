@@ -18,13 +18,37 @@
     height: 156px;
   }
 
+  &--tiny .page-header__bg-image {
+    margin-top: -230px;
+  }
+
+  &::before {
+    content: '';
+
+    position: absolute;
+
+    top: -57px;
+    left: 50%;
+
+    margin-left: -51px;
+
+    width: 102px;
+    height: 83px;
+
+    background-image: url('../img/logo-sedona-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    z-index: 100;
+  }
 
   &::after {
     content: '';
 
-    .img-x-center(320px);
+    position: absolute;
 
     bottom: 0px;
+    left: 0px;
 
     width: 320px;
     height: 26px;
@@ -41,34 +65,9 @@
 
   .img-x-center(768px);
 
-  bottom: 0px;
-
   background-color: #81b3d2;
 
   z-index: 0;
-}
-
-.page-header__logo-image-wrap {
-
-  .img-x-center(102px);
-
-  top: -56px;
-
-  width: 102px;
-  height: 83px;
-
-  z-index: 100;
-}
-
-.page-header__logo-image {
-  display: block;
-
-  margin: 0px auto;
-
-  width: 102px;
-  height: 83px;
-
-  z-index: 100;
 }
 
 .page-header__logo-text {
@@ -99,10 +98,6 @@
 
   background-color: transparent;
   z-index: 100;
-
-  &--hide {
-    display: none;
-  }
 }
 
 
@@ -121,45 +116,42 @@
       height: 290px;
     }
 
+    &--tiny .page-header__bg-image {
+      margin-top: -228px;
+    }
+
     &::before {
-      content: "";
+      content: '';
 
       position: absolute;
 
-      bottom: 0px;
-      left: 0px;
+      top: -56px;
+      left: 50%;
 
-      width: 0px;
-      height: 0px;
+      margin-left: -51px;
 
-      border: 50px solid #ffffff;
-      border-style: solid;
-      border-width: 36px 384px 0 384px;
-      border-color: transparent #ffffff #ffffff #ffffff;
+      width: 102px;
+      height: 84px;
 
-      background: none;
-      z-index: 2;
+      background-image: url('../img/logo-sedona-tablet.svg');
     }
 
-
     &::after {
-      /* Центральный элемент */
-      .img-x-center(702px);
-
-      width: 702px;
+      width: 768px;
       height: 57px;
 
-      background-size: cover;
+      background-image: url('../img/bg-intro-triangle-tablet.svg');
     }
   }
 
   .page-header__bg-image {
+    position: relative;
 
     top: 0px;
     left: 0px;
-    margin: 0px;
 
-    height: 100%;
+    margin: 0px;
+    padding: 0px;
   }
 
   .page-header__title-image {
@@ -191,103 +183,36 @@
   .page-header__logo {
 
     &::before {
-      content: "";
+      content: '';
 
       position: absolute;
 
-      bottom: 0px;
-      left: 0px;
+      top: -56px;
+      left: 50%;
 
-      width: 0px;
-      height: 0px;
+      margin-left: -94px;
 
-      border: 50px solid #ffffff;
-      border-style: solid;
-      border-width: 55px 600px 0 600px;
-      border-color: transparent #ffffff #ffffff #ffffff;
+      width: 187px;
+      height: 96px;
 
-      background: none;
+      background-image: url('../img/logo-sedona-desktop.svg');
+    }
 
-      z-index: 2;
+    &::after {
+
+      width: 1200px;
+      height: 57px;
+
+      background-image: url('../img/bg-intro-triangle-desktop.svg');
     }
 
     &--tiny {
       height: 301px;
     }
-  }
 
-  .page-header__bg-image {
-    display: block;
-
-
-    margin: 0px;
-    padding: 0px;
-
-    width: 100%;
-  }
-
-
-  .page-header__logo-image-wrap {
-
-    position: relative;
-
-    overflow: hidden;
-
-    .img-x-center(190px);
-
-    top: -56px;
-
-    width: 190px;
-    height: 193px;
-
-    &::before {
-      content: "";
-
-      position: absolute;
-
-      top: -44px;
-      left: 35px;
-
-      width: 50px;
-      height: 150px;
-
-      border-bottom-left-radius: 15px;
-      border-bottom-right-radius: 15px;
-
-      background-color: #81b3d2;
-
-      transform: rotate(-42deg);
-
-      z-index: -1;
+    &--tiny .page-header__bg-image {
+      margin-top: -210px;
     }
-
-    &::after {
-      content: "";
-
-      position: absolute;
-
-      top: -44px;
-      right: 37px;
-
-      width: 50px;
-      height: 150px;
-
-      border-bottom-left-radius: 15px;
-      border-bottom-right-radius: 15px;
-
-      background-color: #81b3d2;
-
-      transform: rotate(42deg);
-
-      z-index: -1;
-    }
-  }
-
-  .page-header__logo-image {
-
-    .img-x-center(102px);
-
-    margin-left: -52px;
   }
 
   .page-header__logo-text {

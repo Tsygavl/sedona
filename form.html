@@ -32,16 +32,14 @@
         </div>
       </nav>
       <div class="page-header__logo  page-header__logo--tiny">
-        <div class="page-header__bg-image-wrap">
-          <img class="page-header__bg-image" src="img/bg-back-mobile@1x.jpg" width="768" height="389" alt="Sedona">
-        </div>
-        <div class="page-header__logo-image-wrap">
-          <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Sedona">
-        </div>
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/bg-back-desktop@1x.jpg 1x, img/bg-back-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/bg-back-tablet@1x.jpg 1x, img/bg-back-tablet@2x.jpg 2x">
+          <img class="page-header__bg-image" src="img/bg-back-mobile@1x.jpg" srcset="img/bg-back-mobile@2x.jpg 2x" alt="Sedona">
+        </picture>
         <a href="index.html">
           <img class="page-header__logo-text" src="img/text-sedona.svg" width="460" height="80" alt="Sedona">
         </a>
-        <img class="page-header__title-image  page-header__title-image--hide" src="img/text-sedona-index.svg" width="460" height="350" alt="Welcome to the gargeous Sedona">
       </div>
     </header>
     <main class="page-content">
@@ -136,7 +134,7 @@
             </li>
             <li class="recall-form__visited-item">
               <label class="recall-form__checkbox-control">
-                <input type="checkbox" name="mountain-bell">
+                <input type="checkbox" name="mountain-bell" checked>
                 <span class="recall-form__checkbox-icon"></span>
                 <span class="recall-form__checkbox-label">Гора-Колокол</span>
               </label>
