@@ -33,6 +33,9 @@
 }
 
 .photo-list__item-caption {
+  display: flex;
+  flex-direction: column;
+
   padding: 0px;
   padding-top: 15px;
   margin: 0px auto;
@@ -44,7 +47,7 @@
 
   margin: 0px;
   padding: 0px;
-  
+
   font-weight: bold;
   text-align: left;
   text-transform: uppercase;
@@ -57,19 +60,25 @@
 
 .photo-list__like-btn {
   position: relative;
+
+  align-self: flex-start;
+
   margin: 0px;
   padding: 0px;
   padding-left: 33px;
+  min-width: 70px;
   height: 40px;
 
   font-size: 14px;
   line-height: 24px;
   font-family: "PTSans", "Arial", sans-serif;
   font-weight: bold;
+  text-align: left;
 
   cursor: pointer;
   border: none;
   background: none;
+  outline: none;
 
   &::before {
     content: '';
@@ -101,22 +110,19 @@
   }
 
   .photo-list__item {
-    display: inline-block;
-    vertical-align: top;
-
     padding: 0px;
     margin: 0px;
-    
+
     width: 50%;
-    
+
     border: none;
     overflow: hidden;
-    
+
     & img {
       width: 100%;
       height: 267px;
     }
-    
+
     &--large {
       width: 100%;
       height: 480px;
@@ -126,16 +132,18 @@
       width: 100%;
       height: 400px;
     }
-    
+
     &:nth-child(2n + 3) .photo-list__item-caption {
       background-color: #eaeaea;
     }
   }
 
   .photo-list__item-caption {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     box-sizing: border-box;
-    position: relative;
-    
+
     padding: 15px 20px;
     padding-right: 10px;
     padding-bottom: 17px;
@@ -144,25 +152,14 @@
     width: 100%;
 
     background-color: #f2f2f2;
-    
-    .clearfix();
-  }
-
-  .photo-list__item-id {
-    display: inline-block;
-    float: left;
   }
 
   .photo-list__like-btn {
-    display: inline-block;
-    
-    float: right;
 
     margin-top: 8px;
-    margin-right: 7px;
+    margin-right: 9px;
 
     height: 35px;
-    min-width: 71px;
 
     text-align: left;
 
@@ -180,7 +177,7 @@
   */
 
 @media @desktop-widths {
-  
+
   .photo-list {
     padding: 0px;
     margin: 0px;
@@ -194,19 +191,19 @@
 
     padding: 0px;
     margin: 0px;
-    
-    width: 400px;
+
+    width: 33.3333%;
     height: 267px;
-    
+
     color: #ffffff;
     border: none;
     overflow: hidden;
-    
+
     & img {
       width: 100%;
       height: 267px;
     }
-    
+
     &--large {
       width: 100%;
       min-height: 400px;
@@ -216,7 +213,7 @@
       width: 100%;
       height: 400px;
     }
-    
+
     &:nth-child(2n + 3) .photo-list__item-caption {
       background-color: rgba(0, 0, 0, 0.3);
     }
