@@ -14,6 +14,7 @@ var svgmin = require("gulp-svgmin");
 var svgstore = require("gulp-svgstore");
 var run = require("run-sequence");
 var del = require("del");
+var uglify = require("gulp-uglifyjs");
 
 gulp.task("style", function() {
   gulp.src("less/style.less")
@@ -31,15 +32,22 @@ gulp.task("style", function() {
         sort : true
       })
     ]))
-    .pipe(gulp.dest("build/css"))
+    .pipe(gulp.dest("css"))
     .pipe(minify())
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
 });
 
+gulp.task("scripts", function() {
+  return gulp.src("js/app.js")
+    .pipe(uglify())
+    .pipe(rename("app.min.js"))
+    .pipe(gulp.dest("build/js"));
+});
+
 gulp.task("images", function() {
-  return gulp.src("build/img/**/*.{png,jpg,gif}")
+  return gulp.src(["img/**/*.{png,jpg,gif,svg}", "!img/icons{,/**}"])
     .pipe(imagemin([
       imagemin.optipng({ optimizationLevel: 3 }),
       imagemin.jpegtran({ progressive: true })
@@ -48,7 +56,7 @@ gulp.task("images", function() {
 });
 
 gulp.task("symbols", function() {
-  return gulp.src("build/img/icons/*.svg")
+  return gulp.src("img/icons/*.svg")
     .pipe(svgmin())
     .pipe(svgstore({
       inlineSvg : true
@@ -82,8 +90,6 @@ gulp.task("serve", function() {
 gulp.task("copy", function() {
   return gulp.src([
       "fonts/**/*.{woff,woff2}",
-      "img/**",
-      "js/**",
       "*.html"
     ], {
       base : "."
@@ -95,10 +101,6 @@ gulp.task("clean", function() {
   return del("build");
 });
 
-gulp.task("clean-icons", function() {
-  return del("build/img/icons/");
-});
-
 gulp.task("build", function(fn) {
-  run("clean", "copy", "style", "images", "symbols", "clean-icons", fn);
+  run("clean", "copy", "style", "scripts","images", "symbols", fn);
 });

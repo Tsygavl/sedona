@@ -27,6 +27,7 @@
     "gulp-rename": "^1.2.2",
     "gulp-svgmin": "^1.2.3",
     "gulp-svgstore": "^6.0.0",
+    "gulp-uglifyjs": "^0.6.2",
     "run-sequence": "^1.2.2"
   },
   "scripts": {
