@@ -95,6 +95,10 @@ gulp.task("clean", function() {
   return del("build");
 });
 
+gulp.task("clean-icons", function() {
+  return del("build/img/icons/");
+});
+
 gulp.task("build", function(fn) {
-  run("clean", "copy", "style", "images", "symbols", fn);
+  run("clean", "copy", "style", "images", "symbols", "clean-icons", fn);
 });

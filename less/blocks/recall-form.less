@@ -10,7 +10,7 @@
 
   position: relative;
 
-  padding-bottom: 37px;
+  padding-bottom: 36px;
 
   background-color: #ffffff;
 
@@ -153,7 +153,7 @@
 
   margin: 0px;
   margin-top: 58px;
-  margin-bottom: 29px;
+  margin-bottom: 28px;
   padding: 0px;
 
   list-style: none;
@@ -192,20 +192,14 @@
   font-size: 0px;
 
   background-color: #e6e6e6;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
 
   border: none;
   box-shadow: none;
   cursor: pointer;
+}
 
-  &--phone {
-    background-image: url("../img/icon-phone.svg");
-  }
+.recall-form__input-btn-icon {
 
-  &--mail {
-    background-image: url("../img/icon-mail.svg");
-  }
 }
 
 /**
@@ -305,7 +299,8 @@
   margin: 0px;
   padding: 0px;
 
-  margin-top: 88px;
+  margin-top: 85px;
+  margin-bottom: 27px;
 
   width: 100%;
 
@@ -353,18 +348,22 @@
   background-color: #f2f2f2;
 }
 
+.recall-form__checkbox-icon-tick {
+  display: none;
+
+  position: absolute;
+
+  top: 20px; 
+  left: 16px;
+
+  width: 23px;
+  height: 20px;
+}
+
 .recall-form input[type="checkbox"] {
 
-  &:checked + .recall-form__checkbox-icon::before {
-    content: "";
-
-    margin-left: -11px;
-    margin-top: -8px;
-
-    .absolute-top-left(50%, 50%, 23px, 16px);
-
-    background-image: url("../img/icon-tick.svg");
-    background-repeat: no-repeat;
+  &:checked + .recall-form__checkbox-icon .recall-form__checkbox-icon-tick {
+    display: inline-block;
   }
 
   &:disabled + .recall-form__checkbox-icon {
@@ -675,7 +674,7 @@
     }
 
     &--message {
-      margin-top: 35px;
+      margin-top: 37px;
     }
   }
 
@@ -724,7 +723,7 @@
 
   .recall-form__contacts-label {
     margin: 0px;
-    margin-right: 21px;
+    margin-right: 24px;
 
     line-height: 58px;
   }
