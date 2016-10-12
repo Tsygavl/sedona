@@ -22,6 +22,15 @@
   cursor: pointer;
   outline: none;
 
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    color: #88b6d1;
+    background-color: #5496bd;
+  }
+
   &:disabled {
 
     background-color: #e5e5e5;
@@ -36,12 +45,18 @@
     }
   }
 
-  &:hover {
-    background-color: #669ec0;
+  &--in-progress:not(:disabled) {
+    animation: colorblink 0.5s linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; 
   }
+}
 
-  &:active {
-    color: #88b6d1;
+@keyframes colorblink {
+  0% {
     background-color: #5496bd;
+  }
+  100% {
+    background: #3e84ae;
   }
 }

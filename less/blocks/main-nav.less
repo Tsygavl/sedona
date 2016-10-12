@@ -93,31 +93,33 @@
   outline: none;
 }
 
-.main-nav__btn-open {
+.main-nav__btn-icon {
 
-  &::before {
-    content: "";
+  position: absolute;
+  
+  top: 50%;
+  left: 50%;
 
-    .absolute-top-left(-1px; 0px; 53px; 46px);
+  fill: #81b3d2;
 
-    background-image: url("../img/icon-menu.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
+  &--menu {
+    width: 23px;
+    height: 21px;
+
+    margin-top: -12px;
+    margin-left: -12px;
   }
+
+  &--cross {
+    width: 25px;
+    height: 23px;
+
+    margin-top: -13.5px;
+    margin-left: -12.5px;
+  }
+
 }
 
-.main-nav__btn-close {
-
-  &::before {
-    content: "";
-
-    .absolute-top-left(0px; 0px; 53px; 46px);
-
-    background-image: url("../img/icon-cross.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-  }
-}
 
 /**
   * ===========================================================

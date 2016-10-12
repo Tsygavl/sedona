@@ -30,31 +30,17 @@
     background-color: #5496bd;
   }
 
-  &:active::before {
-     filter: none;
-  }
-
-  &::before {
-    content: "";
-    
-    .absolute-top-left(0px, 0px, 46px, 48px);
-
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-
-    filter: brightness(0%) invert(100%);
-  }
-
-  &--tw::before {
-    background-image: url("../img/icon-twitter.svg");
-  }
-
-  &--fb::before {
-    background-image: url("../img/icon-facebook.svg");
-  }
-
-  &--ub::before {
-    background-image: url("../img/icon-youtube.svg");
+  &:active .social-link__icon {
+     fill: #88b6d1;
   }
 }
 
+.social-link__icon {
+
+  .absolute-top-left(50%, 50%, 18px, 18px);
+
+  margin-top: -9px;
+  margin-left: -9px;
+
+  fill: #ffffff;
+}

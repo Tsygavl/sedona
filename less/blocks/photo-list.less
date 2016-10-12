@@ -78,16 +78,10 @@
   border: none;
   background: none;
   outline: none;
+}
 
-  &::before {
-    content: '';
-
-    .absolute-top-left(7px, 0px, 22px, 20px);
-
-    background-image: url('../img/icon-like.svg');
-    background-repeat: no-repeat;
-    background-position: 0 0;
-  }
+.photo-list__like-btn-icon {
+  .absolute-top-left(7px, 0px, 22px, 20px);
 }
 
 /**
@@ -166,6 +160,12 @@
       top: 5px;
       left: 5px;
     }
+  }
+
+  .photo-list__like-btn-icon {
+    top: 5px;
+    left: 5px;
+    
   }
 }
 
