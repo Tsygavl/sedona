@@ -42,6 +42,10 @@
   width: 280px;
 }
 
+.photo-list__item-id {
+  width: 100%;
+}
+
 .photo-list__item-name {
 
   margin: 0px;
@@ -116,6 +120,10 @@
       height: 267px;
     }
 
+    &--large .photo-list__item-id {
+      width: 500px;
+    }
+
     &--large {
       width: 100%;
       height: 480px;
@@ -145,6 +153,23 @@
     width: 100%;
 
     background-color: #f2f2f2;
+    overflow: hidden;
+  }
+
+  .photo-list__item-id {
+    width: 210px;
+  }
+
+  .photo-list__item-name {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .photo-list__item-author {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
 
   .photo-list__like-btn {
@@ -207,6 +232,10 @@
       min-height: 400px;
     }
 
+    &--large .photo-list__item-id {
+      width: 1000px;
+    }
+
     &--large img {
       width: 100%;
       height: 400px;
@@ -224,6 +253,10 @@
     left: 0px;
 
     background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .photo-list__item-id {
+    width: 280px;
   }
 
   .photo-list__like-btn {

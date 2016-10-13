@@ -95,11 +95,12 @@
   position: absolute;
 
   top: 0;
-  left: 50%;
+  left: 0;
 
-  width: 320px;
-
-  margin-left: -160px;
+  width: 300px;
+  height: 50px;
+  
+  margin: 0px 10px;
   padding: 0;
 
   font-size: 18px;
@@ -108,6 +109,8 @@
 
   text-align: center;
   transform: translateY(18px);
+
+  overflow: hidden;
 }
 
 
@@ -136,9 +139,12 @@
 
 .recall-form__id-label {
   align-self: center;
+
   margin-right: 20px;
   font-size: 14px;
   line-height: 26px;
+
+  text-align: left;
 }
 
 /**
@@ -444,8 +450,9 @@
     flex-direction: row;
     flex-wrap: wrap;
 
-    padding: 60px;
+    padding: 50px;
     padding-top: 8px;
+    padding-bottom: 60px;
   }
 
   .recall-form__invalid-msg {
@@ -456,13 +463,22 @@
       top: -40px;
       right: -20px;
 
+      width: 350px;
+
       text-align: right;
+
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
     }
   }
 
   .recall-form__section {
 
     margin: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+
     width: 648px;
 
     &--id {
@@ -470,8 +486,12 @@
       justify-content: flex-end;
 
       order: 2;
+      
+      box-sizing: border-box;
+      margin: 0px;
+      margin-left: 54px;
 
-      width: 50%;
+      width: 280px;
       border: none;
     }
 
@@ -483,8 +503,10 @@
 
     &--interview {
       order: 1;
+      
+      margin: 0px;
+      width: 334px;
 
-      width: 50%;
       border: none;
       box-shadow: 24px 0px 0px -23px #dbdbdb;
     }
@@ -505,12 +527,21 @@
 
   .recall-form__title {
     top: 0px;
-    left: -24px;
+    left: 0px;
 
     margin-left: 0px;
+    padding-left: 5px;
+
+    height: auto;
 
     font-size: 21px;
     line-height: 26px;
+
+    text-align: left;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 
     &--highlight {
       position: relative;
@@ -521,8 +552,11 @@
       margin: 0 124px;
       padding: 0px 50px;
       width: 300px;
-
+      
+      text-align: center;
       transform: none;
+      overflow: visible;
+      white-space: normal;
     }
   }
 
@@ -533,7 +567,8 @@
   .recall-form__id {
     margin-top: 101px;
     margin-bottom: 0px;
-    margin-left: 54px;
+    margin-left: 0px;
+    margin-right: 10px;
     width: 270px;
   }
 
@@ -549,6 +584,7 @@
   .recall-form__interview {
     margin-top: 103px;
     margin-bottom: 0px;
+    margin-left: 10px;
   }
 
   .recall-form__interview-item {
@@ -588,6 +624,7 @@
     margin-right: 0px;
     margin-top: 57px;
     margin-bottom: 54px;
+
   }
 
   .recall-form__bottom-wrap {
@@ -601,13 +638,17 @@
 
     float: right;
 
-    margin-top: 18px;
+    margin: 18px 10px;
+
+    width: 200px;
+
+    text-align: right;
   }
 
   .recall-form__btn {
     order: 6;
 
-    margin: 0px;
+    margin: 0px 10px;
     min-width: 325px;
     padding-left: 60px;
 
@@ -639,7 +680,7 @@
       position: absolute;
 
       top: -39px;
-      right: 37px;
+      left: 0px;
 
       text-align: left;
     }
@@ -651,11 +692,7 @@
     width: 648px;
 
     &--id {
-      width: 50%;
-    }
-
-    &--id .recall-form__title {
-      margin-left: 15px;
+      width: 480px;
     }
 
     &--contacts {
@@ -664,7 +701,7 @@
     }
 
     &--interview {
-      width: 50%;
+      width: 480px;
     }
 
     &--visited {
@@ -679,7 +716,7 @@
 
   .recall-form__title {
 
-    left: 55px;
+    left: 73px;
 
     &--highlight {
       top: 0px;
@@ -692,6 +729,7 @@
   .recall-form__id {
     margin-top: 102px;
     margin-left: 80px;
+    margin-right: 0px;
     width: 400px;
   }
 
@@ -701,6 +739,7 @@
 
   .recall-form__interview {
     margin-top: 102px;
+    margin-left: 0px;
     padding-left: 4px;
   }
 
@@ -766,7 +805,12 @@
     padding-right: 5px;
   }
 
+  .recall-form__wran-message {
+    margin: 18px 0px;
+  }
+
   .recall-form__btn {
+    margin: 0px;
     padding-left: 30px;
 
     min-width: 480px;

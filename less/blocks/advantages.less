@@ -7,6 +7,9 @@
 .advantages {
   display: flex;
   flex-direction: column;
+  align-items: center;
+
+  background-color: #eeeeee;
 }
 
 .advantages__item {
@@ -61,8 +64,8 @@
   }
 
   &--gray {
-    padding: 10px 31px;
-    padding-bottom: 16px;
+    padding: 11px 31px;
+    padding-bottom: 15px;
 
     background-color: #eeeeee;
     color: #000000;
@@ -139,7 +142,7 @@
 
     padding: 30px 43px;
     width: 170px;
-    height: 196px;
+    min-height: 196px;
 
     overflow: hidden;
 
@@ -154,7 +157,7 @@
 
     & p {
       margin-top: 8px;
-      margin-bottom: 21px;
+      margin-bottom: 18px;
     }
 
     &:first-child {
@@ -187,12 +190,20 @@
       margin: 0px;
 
       width: 100%;
-      height: 330px;
+      min-height: 330px;
     }
 
     &--gray {
+      align-self: stretch;
+
       padding: 30px 50px;
+      padding-bottom: 25px;
       width: 156px;
+      min-height: 190px;
+    }
+
+    &--gray p {
+      margin-bottom: 21px;
     }
 
     &--gray:not(:last-child)::after {
@@ -221,7 +232,7 @@
     padding-top: 158px;
     padding-bottom: 20px;
 
-    min-width: 162px;
+    width: 162px;
     min-height: 150px;
 
     & h2 {
