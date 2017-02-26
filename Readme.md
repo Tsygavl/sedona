@@ -1,54 +1,64 @@
-# Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+# Проект «Седона»
 
-* Студент: [Николай К](https://up.htmlacademy.ru/adaptive/8/user/202794).
-* Наставник: `Алексей Белов`.
+* Вёрстка: [Николай Карастелев](https://github.com/bini1988).
+* Макет: [HTML Academy](https://htmlacademy.ru).
+* Спецификация: [Specification.md](https://github.com/bini1988/sedona/blob/master/Specification.md).
 
----
+## Описание
+Проект «Седона» был выполнен в рамках пройденного онлайн‑курса «Продвинутый HTML и CSS» от HTML Academy.
 
-_Не удаляйте и не обращайте внимание на файлы:_<br>
-_`.editorconfig`, `.gitattributes`, `.gitignore`, `.travis.yml`, `package.json`._
+* Используемые технологии: _HTML, CSS, БЭМ, JS, Адаптивный дизайн_.
+* Автоматизация: _Gulp_.
+* Фреймворки: _нет_
+* Препроцессоры: _LESS_
+* JS модули: _[всплывающие окна](https://github.com/bini1988/sedona/blob/master/js/app.js)_.
 
----
+## Ссылки
 
-### Памятка
+<table>
+  <tr>
+    <th><a href="http://bini1988.github.io/sedona/index.html">Главная страница</a></th>
+    <th><a href="http://bini1988.github.io/sedona/photo.html">Страница Фото</a></th>
+    <th><a href="http://bini1988.github.io/sedona/form.html">Страница Форма</a></th>
+  </tr>
+  <tr valign="top">
+    <td>
+      <a href="https://cloud.githubusercontent.com/assets/8654155/23339724/22f59f66-fc39-11e6-96ce-468454eba2d3.png" target="_blank">
+        <img src="https://cloud.githubusercontent.com/assets/8654155/23339724/22f59f66-fc39-11e6-96ce-468454eba2d3.png" width="250" alt="Главная страница">
+      </a>
+    </td>
+    <td>
+      <a href="https://cloud.githubusercontent.com/assets/8654155/23339729/3c855304-fc39-11e6-9c9b-0aed94c8f2c1.png" target="_blank"><img src="https://cloud.githubusercontent.com/assets/8654155/23339729/3c855304-fc39-11e6-9c9b-0aed94c8f2c1.png" width="250" alt="Страница Фото"></a>
+    </td>
+    <td>
+      <a href="https://cloud.githubusercontent.com/assets/8654155/23339738/6ab906c6-fc39-11e6-875e-286ff3579e95.png" target="_blank"><img src="https://cloud.githubusercontent.com/assets/8654155/23339738/6ab906c6-fc39-11e6-875e-286ff3579e95.png" width="250" alt="Страница Форма"></a>
+    </td>
+  </tr>
+  <tr valign="top">
+    <td>
+      <a href="https://cloud.githubusercontent.com/assets/8654155/23339720/1fcadda6-fc39-11e6-9a2f-6712ac075151.png" target="_blank">
+        <img src="https://cloud.githubusercontent.com/assets/8654155/23339720/1fcadda6-fc39-11e6-9a2f-6712ac075151.png" width="250" alt="Главная страница">
+      </a>
+    </td>
+    <td>
+      <a href="https://cloud.githubusercontent.com/assets/8654155/23339728/387f76fe-fc39-11e6-8302-d8919e4a84ac.png" target="_blank"><img src="https://cloud.githubusercontent.com/assets/8654155/23339728/387f76fe-fc39-11e6-8302-d8919e4a84ac.png" width="250" alt="Страница Фото"></a>
+    </td>
+    <td>
+      <a href="https://cloud.githubusercontent.com/assets/8654155/23339735/653bad8e-fc39-11e6-9946-e0bc99ddcc41.png" target="_blank"><img src="https://cloud.githubusercontent.com/assets/8654155/23339735/653bad8e-fc39-11e6-9946-e0bc99ddcc41.png" width="250" alt="Страница Форма"></a>
+    </td>
+  </tr>
+  <tr valign="top">
+    <td>
+      <a href="https://cloud.githubusercontent.com/assets/8654155/23339718/1aec234e-fc39-11e6-97e5-3cef19ad93af.png" target="_blank">
+        <img src="https://cloud.githubusercontent.com/assets/8654155/23339718/1aec234e-fc39-11e6-97e5-3cef19ad93af.png" width="250" alt="Главная страница">
+      </a>
+    </td>
+    <td>
+      <a href="https://cloud.githubusercontent.com/assets/8654155/23339727/35d5e654-fc39-11e6-97ac-cdd6a71304f4.png" target="_blank"><img src="https://cloud.githubusercontent.com/assets/8654155/23339727/35d5e654-fc39-11e6-97ac-cdd6a71304f4.png" width="250" alt="Страница Фото"></a>
+    </td>
+    <td>
+      <a href="https://cloud.githubusercontent.com/assets/8654155/23339733/5dd12e0c-fc39-11e6-90f4-41df75674454.png" target="_blank"><img src="https://cloud.githubusercontent.com/assets/8654155/23339733/5dd12e0c-fc39-11e6-90f4-41df75674454.png" width="250" alt="Страница Форма"></a>
+    </td>
+  </tr>
+</table>
 
-#### 1. Зарегистрируйтесь на Гитхабе
-
-Если у вас ещё нет аккаунта на [github.com](https://github.com/join), скорее зарегистрируйтесь.
-
-#### 2. Создайте форк
-
-Откройте репозиторий и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии будет скопирован в ваш аккаунт.
-
-<img width="769" alt="" src="https://cloud.githubusercontent.com/assets/10909/15455709/984b9002-206d-11e6-89fd-63eeaadc25df.png">
-
-Получится вот так:
-
-<img width="769" alt="" src="https://cloud.githubusercontent.com/assets/10909/15455710/986fc058-206d-11e6-9874-3392a84cbb6f.png">
-
-#### 3. Клонируйте репозиторий на свой компьютер
-
-Будьте внимательны: нужно клонировать свой репозиторий (форк), а не репозиторий Академии. Также обратите внимание, что клонировать репозиторий нужно через SSH, а не через HTTPS. Нажмите зелёную кнопку в правой части экрана, чтобы скопировать SSH-адрес вашего репозитория:
-
-<img width="769" alt="" src="https://cloud.githubusercontent.com/assets/10909/15455711/9875cd36-206d-11e6-8612-3e5da5bde374.png">
-
-Клонировать репозиторий можно так:
-
-```
-git clone SSH-адрес_вашего_форка
-```
-
-Команда клонирует репозиторий на ваш компьютер и подготовит всё необходимое для старта работы.
-
-#### 4. Начинайте обучение!
-
----
-
-<a href="https://htmlacademy.ru/intensive/adaptive"><img align="left" width="50" height="50" alt="HTML Academy" src="https://up.htmlacademy.ru/static/img/intensive/adaptive/logo-for-github.svg"></a>
-
-Репозиторий создан для обучения на интенсивном онлайн‑курсе «[Продвинутый HTML и CSS](https://htmlacademy.ru/intensive/adaptive)» от [HTML Academy](https://htmlacademy.ru).
-
-[travis-image]: https://travis-ci.org/htmlacademy-adaptive/202794-sedona.svg?branch=master
-[travis-url]: https://travis-ci.org/htmlacademy-adaptive/202794-sedona
-[dependency-image]: https://david-dm.org/htmlacademy-adaptive/202794-sedona.svg?style=flat-square
-[dependency-url]: https://david-dm.org/htmlacademy-adaptive/202794-sedona
